@@ -56,7 +56,7 @@ export default function Uslugi() {
     <div className={styles.passport}>
 <Image src={"/assets/Frame 34092 (5).svg"} alt='Frame' width={90} height={90}/>
 </div>
-<span>Investor and Employee Visas</span>
+<span className={styles.span}>Investor and Employee Visas</span>
 </div>
 <div className={styles.box2}>
     <div className={styles.cart}>
@@ -67,7 +67,7 @@ export default function Uslugi() {
 </div>
 
 <div className={styles.btn}>
-    <button>Check out our services</button>
+   <a href=""> <button>Check out our services</button></a>
                <div className={styles.rectan}>
 <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40}/>
            </div>

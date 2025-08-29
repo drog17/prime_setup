@@ -41,21 +41,34 @@ border-radius: 8px;
 border-width: 1px;
 box-shadow: 2px 2px 10px 0px #0051DE26;
 border: 1px solid #0A246333;
+background: white;
 box-shadow: -2px -2px 10px 0px #D2321626;
 .burger{
     margin-top: 74px;
  margin-left: 115px;
  position: relative
 }
+.burger:hover{
+    transform: scale(1.1);
+    opacity: 2;
+}
 .cart{
         margin-top: 74px;
  margin-left: 115px;
  position: relative
 }
+.cart:hover{
+    transform: scale(1.1);
+        opacity: 2;
+}
 .meda{
           margin-top: 97px;
  margin-left: 115px;
  position: relative
+}
+.meda:hover{
+    transform: scale(1.1);
+    opacity: 2;
 }
 span{
 margin: 15px;
@@ -87,6 +100,11 @@ letter-spacing: 0%;
 display: flex;
 justify-content: center;
 color: #134397;
+}
+span:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    cursor: pointer;
 }
     }
 }
@@ -102,26 +120,43 @@ border-radius: 8px;
 border-width: 1px;
 box-shadow: 2px 2px 10px 0px #0051DE26;
 border: 1px solid #0A246333;
+background: white;
 box-shadow: -2px -2px 10px 0px #D2321626;
 .burger{
     margin-top: 74px;
  margin-left: 115px;
  position: relative
 }
+.burger:hover{
+      transform: scale(1.05);
+      opacity: 2;
+}
 .cart{
         margin-top: 74px;
  margin-left: 115px;
  position: relative
+}
+.cart:hover{
+      transform: scale(1.2);
+    opacity: 1;
 }
 .meda{
           margin-top: 97px;
  margin-left: 115px;
  position: relative
 }
+.meda:hover{
+      transform: scale(1.1);
+    opacity: 2;
+}
 .passport{
            margin-top: 74px;
  margin-left: 115px;
  position: relative 
+}
+.passport:hover{
+      transform: scale(1.1);
+    opacity: 2;
 }
 span{
 margin: 15px;
@@ -153,6 +188,11 @@ letter-spacing: 0%;
 display: flex;
 justify-content: center;
 color: #134397;
+}
+.span:hover{
+      transform: scale(1.1);
+    opacity: 2;
+    cursor: pointer;
 }
     }
 }
@@ -176,6 +216,11 @@ letter-spacing: 0%;
 color: #D23216;
 background: transparent;
     }
+            button:hover{
+                cursor: pointer;
+          background: #D23216;  
+          color: white;
+        }
     .rectan{
         margin-top: 16px;
         margin-left: 251px;

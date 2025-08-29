@@ -12,7 +12,7 @@ export default function Whychoice() {
                     <br /> every legal and administrative detail so they can focus on growth.</p>
             </div>
             <div className={styles.btn}>
-           <button>Learn more about us</button>
+          <a href=""><button>Learn more about us</button></a> 
            <div className={styles.rectan}>
 <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40}/>
            </div>
