@@ -1,0 +1,80 @@
+.free {
+    background: url('/freebg.png') center/cover no-repeat;
+    height: 750px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 70px 0;
+    margin-bottom: 40px;
+
+    .content {
+        text-align: center;
+    }
+
+    .title {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 109%;
+        text-align: center;
+        color: var(--zagol);
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        background: #0c3c8c;
+        color: #fff;
+        border-radius: 20px;
+        padding: 70px;
+        gap: 70px;
+    }
+
+    .imageWrapper {
+        flex: 0 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px;
+    }
+
+    .content {
+        flex: 1;
+        text-align: left;
+    }
+
+    .text {
+        .cardTitle {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 133%;
+            color: #fff;
+        }
+
+        p {
+            font-family: var(--third-family);
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 123%;
+            color: #fff;
+        }
+    }
+
+
+    .dots {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50%;
+        }
+
+        .dot.active {
+            background: #00aaff;
+        }
+    }
+}
