@@ -1,0 +1,119 @@
+.footer{
+    background-color: gainsboro;
+    max-width: 100%;
+    height: 1000px;
+    padding-top: 620px;
+    $color: #0A2463 ;
+    $corner-radius: clamp(20px, 4vw, 60px); 
+    $roof-height: clamp(60px, 10vh, 120px); 
+    position: relative;
+    z-index: 1;
+    .uae{
+       position: absolute; 
+       z-index: 2;
+       margin-left: 225px;
+       margin-top: -430px;
+    }
+    .house {
+  position: absolute;
+  width: min(90vw, 1393px); 
+  aspect-ratio: 1393 / 433;
+  background-color: transparent;
+  margin-top: -250;
+  margin-left: 70px;
+    }
+    .roof {
+  position: absolute;
+  top: 1.1;
+  left: 0;
+  width: 100%;
+  height: $roof-height;
+  background-color:  #0A2463 ;
+  clip-path: polygon(
+    2% 100%, 50% 0.0, 98% 100%
+  );
+  border-top-left-radius: $corner-radius;
+  border-top-right-radius: $corner-radius;
+    }
+    .bodydy {
+  position: absolute;
+  top: $roof-height;
+  left: 0;
+  width: 100%;
+  height: calc(100% - #{$roof-height});
+  background-color:#0A2463 ;
+  border: none; 
+  border-top-left-radius: $corner-radius;
+  border-top-right-radius: $corner-radius;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+    }
+    .container{
+      max-width: 100%;
+      height: 381px;
+      background-color:#0A2463;
+        .footerCard{     
+            width: 1090px;
+            height: 197px;
+            margin-left: 200px;
+            display: flex;
+            gap: 200px;
+            padding-top: 50px;
+            position: relative;
+            .card1{
+                width: 204px;
+                height: 197px;
+                .p{
+                    margin-top: 10px;
+                    padding-bottom: 20px;
+                    color: white;
+                }
+                .sotsialImages{
+                    width: 154px;
+                    height: 24px;
+                    gap: 20px;
+                    .images{
+                        margin-left: 8px;
+                    }
+                }
+            }
+            .card2{
+                width: 686px;
+                height: 158px;
+                margin-top: 18px;
+                display: flex;
+                gap: 110px;
+                .catalogs{        
+                    .nameS{
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #fff;
+                        padding-bottom: 10px;
+                    }
+                    .smallP{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #fff;
+                        margin-top: 8px;
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .palochka{
+    width: 1185px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 90px;
+    margin-left: 150px;
+    }
+    .text{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    }
+}
