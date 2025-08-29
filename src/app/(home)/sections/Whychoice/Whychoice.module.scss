@@ -1,0 +1,69 @@
+.Why{
+margin-top: 160px;
+    padding-left: 252px;
+    .box{
+        width: 936px;
+height: 331px;
+    .choice{
+        width: 952px;
+height: 232px;
+h1{
+    margin-left: 112px;
+    width: 728px;
+height: 100px;
+font-family: Gilroy-Bold;
+font-weight: 400;
+font-style: ☞;
+font-size: 46px;
+leading-trim: NONE;
+line-height: 50px;
+letter-spacing: 0%;
+text-align: center;
+color: #0A2463;
+}
+p{
+margin-top: 20px;
+font-family: Gilroy-Medium;
+font-weight: 400;
+font-style: ☞;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+color: black;
+}
+    }
+    .btn{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        button{
+            width: 271px;
+height: 59px;
+border-radius: 10px;
+border-width: 4px;
+border: 4px solid var(--333, #D23216);
+background: transparent;
+font-family: SF Pro Display;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+color: #D23216;
+        }
+        button:hover{
+            cursor: pointer;
+          background: #D23216;  
+          color: white;
+        }
+        .rectan{
+            margin-left: 228px;
+            margin-top: 16px;
+            position: absolute;
+        }
+    }
+    }
+}
