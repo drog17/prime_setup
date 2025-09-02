@@ -15,11 +15,15 @@
 
     .catalogs {
         display: flex;
-        list-style: none;
         color: #fff;
         gap: 20px;
         width: 1070px;
         height: 49px;
+        .nodirection{
+            margin-top: 17px;
+            text-decoration: none;
+            color: white;
+        }
        .li{
         font-size: 18px;
         display: flex;
