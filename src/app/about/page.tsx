@@ -4,7 +4,7 @@ import Missiya from "../Onas/sections/Missiya/Missiya";
 import Predprimial from "../Onas/sections/Predprinial/Predprimial";
 import Prime from "../Onas/sections/Prime/Prime";
 import Commanda from "../Onas/sections/Comanda/Comanda";
-import Footer from "@/widget/footer/Footer";
+import FooterRu from "@/widget/footer/FooterRu";
 export default function About() {
     return (
         <>
