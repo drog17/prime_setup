@@ -1,5 +1,5 @@
 import styles from './Buttonts.module.scss'
-import tgpng from '../../../../../public/assets/Telegram.png'
+import tgpng from '../../../public/assets/Telegram.png'
 import Image from 'next/image';
 
 export default function Buttonts() {

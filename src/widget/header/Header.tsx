@@ -4,7 +4,14 @@ import Image from 'next/image';
 import arrowPng from '../../../public/assets/Arrow - Right 2.png' 
 import Link from 'next/link';
 
+
+interface HeaderProps {
+  variant?: 'default' | 'transparent' | 'dark' | 'homeHeader' | 'detailtHeader';
+  children?: React.ReactNode;
+}
+
 export default function Header() {
+    
     return (
         <>
             <header className={styles.header}>
