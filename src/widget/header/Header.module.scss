@@ -1,6 +1,9 @@
 .header {
     position: absolute;
     top: 0;
+    &.detailHeader{
+        background: #134397;
+    }
     .container {
         width: 1440px;
         height: 144px;

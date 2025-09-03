@@ -1,0 +1,34 @@
+.hero {
+    background: url('/Blogbg.png')center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+
+    .content {
+        .text {
+            font-weight: 400;
+            color: #fff;
+            gap: 30px;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            .title {
+                font-family: var(--second-family);
+                font-size: 65px;
+                line-height: 108%;
+            }
+
+            p {
+                font-family: var(--third-family);
+                font-size: 26px;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: 775px;
+        }
+    }
+}

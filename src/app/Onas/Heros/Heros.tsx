@@ -1,4 +1,5 @@
 import styles from './Heros.module.scss'
+
 import { Buttonfree } from '@/shared/Buttonfree/Buttonfree'
 import  Buttonts from '@/shared/Buttonts/Buttonts'
 

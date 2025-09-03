@@ -8,13 +8,13 @@ import FooterRu from "@/widget/footer/FooterRu";
 export default function About() {
     return (
         <>
-   <Header/>
-   <Heros/>
-   <Prime/>
-<Missiya/>
-<Predprimial/>
-<Commanda/>
-<FooterRu/>
-            </>
+            <Header />
+            <Heros />
+            <Prime />
+            <Missiya />
+            <Predprimial />
+            <Commanda />
+            <Footer />
+        </>
     )
 }
