@@ -1,7 +1,7 @@
-import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
 import styles from './Heros.module.scss'
-import Buttonts from './Buttonts/Buttonts'
-import { Buttonfree } from './Buttonfree/Buttonfree'
+import { Buttonfree } from '@/shared/Buttonfree/Buttonfree'
+import  Buttonts from '@/shared/Buttonts/Buttonts'
+
 
 export default function Heros(){
 return (
