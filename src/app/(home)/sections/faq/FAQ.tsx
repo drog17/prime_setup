@@ -2,6 +2,7 @@
 import { useState } from "react";
 import styles from "./faq.module.scss";
 import Container from "@/shared/ui/Container";
+import Image from "next/image";
 
 const faqs = [
   { question: "Why should I start a business in Dubai?", answer: "Dubai offers a strategic location, tax advantages, modern infrastructure, and global business opportunities." },
@@ -49,8 +50,12 @@ export default function FAQ() {
               </div>
             ))}
           </div>
-
-          <button className={styles.readMore}>Read all answers</button>
+<div className={styles.readMore}>
+          <button>Read all answers</button>
+                     <div className={styles.rectan}>
+<Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40}/>
+           </div>
+           </div>
         </div>
       </Container>
     </section>

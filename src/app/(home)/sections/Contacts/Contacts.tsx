@@ -55,6 +55,7 @@ export default function Contacts() {
                             <div className={styles.name}>
                                 <h3>First Name</h3>
                                 <input
+                                name="firstName"
                                     type="text"
                                     placeholder="Enter full name"
                                     value={formData.firstName}
@@ -65,6 +66,7 @@ export default function Contacts() {
                             <div className={styles.lastname}>
                                 <h3>Last Name</h3>
                                 <input
+                                name="lastName"
                                     type="text"
                                     placeholder="Enter full surname"
                                     value={formData.lastName}
@@ -77,6 +79,7 @@ export default function Contacts() {
                         <div className={styles.email}>
                             <h3>Email Addres</h3>
                             <input
+                            name="email"
                                 type="email"
                                 placeholder="Enter email address"
                                 value={formData.email}
@@ -88,6 +91,7 @@ export default function Contacts() {
                         <div className={styles.phone}>
                             <h3>Phone Number</h3>
                             <input
+                            name="phone"
                                 type="tel"
                                 placeholder="Enter phone number"
                                 value={formData.phone}

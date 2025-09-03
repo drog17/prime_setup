@@ -66,6 +66,9 @@ return (
         </div>
         <div className={styles.btn}>
 <a href=""><button>View all articles</button></a>
+           <div className={styles.rectan}>
+<Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40}/>
+           </div>
         </div>
         </div>
     </div>

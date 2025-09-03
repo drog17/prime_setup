@@ -15,13 +15,12 @@
 
     .catalogs {
         display: flex;
-        list-style: none;
         color: #fff;
         gap: 20px;
         width: 1070px;
         height: 49px;
-                .nodirection{
-                    margin-top: 17px;
+        .nodirection{
+            margin-top: 17px;
             text-decoration: none;
             color: white;
         }
@@ -40,8 +39,8 @@
        .buttonLeav{
         border-radius: 10px;
         padding: 13px 20px;
-        width: 182px;
-        height: 49px;
+   width: 215px;
+height: 50px;
         background: #fff;
         border: none;
         font-family: var(--font-family);
@@ -49,10 +48,10 @@
         font-size: 20px;
         color: #134397;
        }
-        .buttonLeav:hover{
-    background-color:#134397;
-    color: white;
-    border: 1px solid var(--333, white);
+              .buttonLeav:hover{
+        background: transparent;
+        color: white;
+           border: 1px solid var(--333, white);
        }
     }
 }
