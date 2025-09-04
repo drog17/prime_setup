@@ -96,4 +96,3 @@ const filtered = data.filter((item) => {
       <div className={styles.div}></div>
     </section>
   );
-}

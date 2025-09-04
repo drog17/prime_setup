@@ -1,0 +1,67 @@
+.products {
+    padding: 140px 0;
+
+    .content {
+        text-align: center;
+
+        .title {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 46px;
+            text-align: center;
+            color: var(--zagol);
+            margin-bottom: 60px;
+        }
+
+        .searchContainer {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .searchInput {
+            width: 80%;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #4a90e2;
+            }
+        }
+
+        .searchIcon {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            right: 140px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            background: rgb(158, 46, 46);
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 19px;
+            padding: 12px 15px;
+            color: #fff;
+            border-radius: 0 10px 10px 0;
+            width: 155px;
+        }
+
+        .cards {
+            margin-top: 100px;
+            display: flex;
+            width: 1400px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .noResults {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+    }
+}

@@ -31,4 +31,5 @@ export default function Poisk() {
       <Biznes searchQuery={query} />
     </section>
   );
+
 }
