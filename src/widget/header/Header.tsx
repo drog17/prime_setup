@@ -12,6 +12,7 @@ export default function Header() {
         <>
             <header className={styles.header}>
                 <div className={styles.container}>
+
                     <Link href="/"><Image src={frame3} alt='' className={styles.frame3} /></Link>
                     <div className={styles.catalogs}>
                         <Link className={styles.nodirection} href="/about"><li className={styles.li}>About Us</li></Link>
