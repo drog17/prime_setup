@@ -1,187 +1,579 @@
+// .Ower{
+//     margin-top: 103px;
+//     width: 100%;
+// height: 942px;
+// background: url('/assets/Group 3.jpg');
+// background-repeat: no-repeat;
+// background-size: cover;
+// .contend{
+//     padding-top: 145px;
+//     margin-left: 145px;
+//     width: 1150px;
+// height: 650px;
+
+// .boxs{
+//     width: 1150px;
+// height: 300px;
+// display: flex;
+// column-gap: 50px;
+// .box1{
+//     width: 350px;
+// height: 300px;
+// .medal{
+//     margin-top: 25px;
+//     margin-left: 25px;
+//     img{
+//         margin-left: 100px;
+//     }
+//     .span{
+//                 width: 300px;
+// height: 56px;
+// text-align: center;
+//         span{
+//             font-family: Gilroy-Heavy;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 24px;
+// leading-trim: NONE;
+// line-height: 28px;
+// letter-spacing: 4%;
+// color: white;
+//         }
+//     }
+// }
+// .pazzle{
+//         margin-top: 25px;
+//     margin-left: 25px;
+//     img{
+//         margin-left: 100px;
+//     }
+//     .span{
+//                 width: 300px;
+// height: 56px;
+// text-align: center;
+//         span{
+//             font-family: Gilroy-Heavy;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 24px;
+// leading-trim: NONE;
+// line-height: 28px;
+// letter-spacing: 4%;
+// color: white;
+//         }
+//     }
+// }
+// .ruki{
+//         margin-top: 25px;
+//     margin-left: 25px;
+//     img{
+//         margin-left: 100px;
+//     }
+//     .span{
+//                 width: 300px;
+// text-align: center;
+//         span{
+//             font-family: Gilroy-Heavy;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 24px;
+// leading-trim: NONE;
+// line-height: 28px;
+// letter-spacing: 4%;
+// color: white;
+//         }
+//     }
+// }
+// p{
+//     margin-top: 10px;
+//     width: 300px;
+//     margin-left: 25px;
+//     font-family: Gilroy-Regular;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 20px;
+// text-align: center;
+// color: white;
+// }
+// }
+// }
+// .boxs2{
+//     margin-top: 50px;
+//        width: 1150px;
+// height: 300px;
+// display: flex; 
+// column-gap: 50px;
+// .box2{
+//     width: 350px;
+// height: 300px;
+// .times{
+//     margin-top: 54px;
+//     margin-left: 25px;
+//     img{
+//         margin-left: 100px;
+//     }
+//     .span{
+//                 width: 300px;
+// text-align: center;
+//         span{
+//             font-family: Gilroy-Heavy;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 24px;
+// leading-trim: NONE;
+// line-height: 28px;
+// letter-spacing: 4%;
+// color: white;
+//         }
+//     }
+// }
+// .support{
+//         margin-top: 54px;
+//     margin-left: 25px;
+//     img{
+//         margin-left: 100px;
+//     }
+//     .span{
+//                 width: 300px;
+// text-align: center;
+//         span{
+//             font-family: Gilroy-Heavy;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 24px;
+// leading-trim: NONE;
+// line-height: 28px;
+// letter-spacing: 4%;
+// color: white;
+//         }
+//     }
+// }
+// .security{
+//         margin-top: 54px;
+//     margin-left: 25px;
+//     img{
+//         margin-left: 100px;
+//     }
+//     .span{
+//                 width: 300px;
+// text-align: center;
+//         span{
+//             font-family: Gilroy-Heavy;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 24px;
+// leading-trim: NONE;
+// line-height: 28px;
+// letter-spacing: 4%;
+// color: white;
+//         }
+//     }
+// }
+// p{
+//     margin-top: 10px;
+//     width: 300px;
+//     margin-left: 25px;
+//     font-family: Gilroy-Regular;
+// font-weight: 400;
+// font-style: ☞;
+// font-size: 20px;
+// text-align: center;
+// color: white;
+// }
+// }
+// }
+
+// }
+// }
+
+
+.Ower {
+  margin-top: 103px;
+  width: 100%;
+  min-height: 100vh;
+  background: url('/assets/Group 3.jpg') no-repeat center center;
+  background-size: cover;
+
+  .contend {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .boxs,
+    .boxs2 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap; // разрешаем перенос
+      margin-top: 40px;
+
+      .box1,
+      .box2 {
+        flex: 1 1 300px; // гибкая ширина (минимум 300px)
+        max-width: 350px;
+        text-align: center;
+        color: white;
+
+        img {
+          display: block;
+          margin: 0 auto 15px;
+          max-width: 100px; // чтоб картинки тоже уменьшались
+          height: auto;
+        }
+
+        .span {
+          margin-top: 10px;
+
+          span {
+            font-family: Gilroy-Heavy;
+            font-size: 22px;
+            line-height: 28px;
+            color: white;
+          }
+        }
+
+        p {
+          margin-top: 10px;
+          font-family: Gilroy-Regular;
+          font-size: 18px;
+          line-height: 24px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .Ower {
+    .contend {
+      display: flex;
+      padding-top: 60px;
+      gap: 20px;
+      .boxs,
+      .boxs2 {
+        gap: 20px;
+      }
+
+      .box1,
+      .box2 {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .Ower {
+background: none;
+color: #000000;
+    .contend {
+      display: flex;
+      padding-top: 40px;
+     .boxs{
+      .box1{
+        .medal{
+          img{
+           display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 70.923072814941406px;
+height: 70.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 18px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+
+             .pazzle{
+          img{
+                      display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 70.923072814941406px;
+height: 70.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 18px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+
+             .ruki{
+          img{
+                   display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 70.923072814941406px;
+height: 70.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 18px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+        p{
+          font-family: Gilroy-Regular;
+font-weight: 400;
+font-size: 16px;
+line-height: 13px;
+text-align: center;
+color: #000000;
+        }
+      }
+    }
+
+        .boxs2{
+      .box2{
+        .times{
+          img{
+                  display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 70.923072814941406px;
+height: 70.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 18px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+                .support{
+          img{
+                      display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 70.923072814941406px;
+height: 70.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 18px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+                .security{
+          img{
+                    display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 70.923072814941406px;
+height: 70.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 18px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+        p{
+          font-family: Gilroy-Regular;
+font-weight: 400;
+font-size: 16px;
+line-height: 13px;
+text-align: center;
+color: #000000;
+        }
+      }
+    }
+    }
+  }
+}
+@media (max-width:400px) {
 .Ower{
-    margin-top: 103px;
-    width: 100%;
-height: 942px;
-background: url('/assets/Group 3.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-.contend{
-    padding-top: 145px;
-    margin-left: 145px;
-    width: 1150px;
-height: 650px;
+  .contend{
+    display: flex;
+    .boxs{
+      .box1{
+        .medal{
+          img{
+           display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 50.923072814941406px;
+height: 50.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 14px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
 
-.boxs{
-    width: 1150px;
-height: 300px;
-display: flex;
-column-gap: 50px;
-.box1{
-    width: 350px;
-height: 300px;
-.medal{
-    margin-top: 25px;
-    margin-left: 25px;
-    img{
-        margin-left: 100px;
-    }
-    .span{
-                width: 300px;
-height: 56px;
-text-align: center;
-        span{
+             .pazzle{
+          img{
+                      display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 50.923072814941406px;
+height: 50.923072814941406px;
+          }
+          .span{
+            span{
             font-family: Gilroy-Heavy;
 font-weight: 400;
-font-style: ☞;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 28px;
+font-size: 14px;
+line-height: 14.26px;
 letter-spacing: 4%;
-color: white;
+text-align: center;
+color: #000000;
+            }
+          }
         }
-    }
-}
-.pazzle{
-        margin-top: 25px;
-    margin-left: 25px;
-    img{
-        margin-left: 100px;
-    }
-    .span{
-                width: 300px;
-height: 56px;
-text-align: center;
-        span{
-            font-family: Gilroy-Heavy;
-font-weight: 400;
-font-style: ☞;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 28px;
-letter-spacing: 4%;
-color: white;
-        }
-    }
-}
-.ruki{
-        margin-top: 25px;
-    margin-left: 25px;
-    img{
-        margin-left: 100px;
-    }
-    .span{
-                width: 300px;
-text-align: center;
-        span{
-            font-family: Gilroy-Heavy;
-font-weight: 400;
-font-style: ☞;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 28px;
-letter-spacing: 4%;
-color: white;
-        }
-    }
-}
-p{
-    margin-top: 10px;
-    width: 300px;
-    margin-left: 25px;
-    font-family: Gilroy-Regular;
-font-weight: 400;
-font-style: ☞;
-font-size: 20px;
-text-align: center;
-color: white;
-}
-}
-}
-.boxs2{
-    margin-top: 50px;
-       width: 1150px;
-height: 300px;
-display: flex; 
-column-gap: 50px;
-.box2{
-    width: 350px;
-height: 300px;
-.times{
-    margin-top: 54px;
-    margin-left: 25px;
-    img{
-        margin-left: 100px;
-    }
-    .span{
-                width: 300px;
-text-align: center;
-        span{
-            font-family: Gilroy-Heavy;
-font-weight: 400;
-font-style: ☞;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 28px;
-letter-spacing: 4%;
-color: white;
-        }
-    }
-}
-.support{
-        margin-top: 54px;
-    margin-left: 25px;
-    img{
-        margin-left: 100px;
-    }
-    .span{
-                width: 300px;
-text-align: center;
-        span{
-            font-family: Gilroy-Heavy;
-font-weight: 400;
-font-style: ☞;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 28px;
-letter-spacing: 4%;
-color: white;
-        }
-    }
-}
-.security{
-        margin-top: 54px;
-    margin-left: 25px;
-    img{
-        margin-left: 100px;
-    }
-    .span{
-                width: 300px;
-text-align: center;
-        span{
-            font-family: Gilroy-Heavy;
-font-weight: 400;
-font-style: ☞;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 28px;
-letter-spacing: 4%;
-color: white;
-        }
-    }
-}
-p{
-    margin-top: 10px;
-    width: 300px;
-    margin-left: 25px;
-    font-family: Gilroy-Regular;
-font-weight: 400;
-font-style: ☞;
-font-size: 20px;
-text-align: center;
-color: white;
-}
-}
-}
 
+             .ruki{
+          img{
+                   display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 50.923072814941406px;
+height: 50.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 14px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+        p{
+          font-family: Gilroy-Regular;
+font-weight: 400;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+color: #000000;
+        }
+      }
+    }
+
+        .boxs2{
+      .box2{
+        .times{
+          img{
+                  display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 50.923072814941406px;
+height: 50.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 14px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+                .support{
+          img{
+                      display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 50.923072814941406px;
+height: 50.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 14px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+                .security{
+          img{
+                    display: block;
+           filter: brightness(0) invert(0);
+           margin: 0 auto;
+           width: 50.923072814941406px;
+height: 50.923072814941406px;
+          }
+          .span{
+            span{
+            font-family: Gilroy-Heavy;
+font-weight: 400;
+font-size: 14px;
+line-height: 14.26px;
+letter-spacing: 4%;
+text-align: center;
+color: #000000;
+            }
+          }
+        }
+        p{
+          font-family: Gilroy-Regular;
+font-weight: 400;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+color: #000000;
+        }
+      }
+    }
+
+
+  }
 }
 }
