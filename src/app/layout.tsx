@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import '@/shared/styles/global.module.scss'
+import '@/shared/styles/global.scss'
 
 
 export const metadata: Metadata = {

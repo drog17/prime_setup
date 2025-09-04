@@ -4,6 +4,7 @@
   .content {
     max-width: 800px;
     text-align: center;
+
   }
 
   .title {
@@ -19,11 +20,13 @@
   }
 
   .accordion {
-    text-align: left;
+    text-align: center;
+    width: 100%;
   }
 
   .item {
     border-bottom: 1px solid #ddd;
+    width: 100%;
   }
 
   .question {
