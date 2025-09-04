@@ -3,6 +3,7 @@ import styles from './detail.module.scss'
 import Image from 'next/image'
 
 export default function Detail() {
+
     return (
         <>
             <section className={styles.detail}>

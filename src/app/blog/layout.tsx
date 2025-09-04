@@ -9,7 +9,7 @@ export default function HomeLayout({
 }) {
   return (
     <>
-      <Header/>
+      <Header variant="detailtHeader"/>
       <main>
         {children}
       </main>

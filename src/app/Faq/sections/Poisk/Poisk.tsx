@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from './Poisk.module.scss'
 export default function Poisk() {
+ 
+
     return(
         <section className={styles.section}>
             <div className={styles.contend}>
