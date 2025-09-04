@@ -19,7 +19,7 @@ export default function Header() {
                         <Link className={styles.nodirection} href="/services"><li className={styles.li}>Services</li></Link>
                         <Link className={styles.nodirection} href="/blog"><li className={styles.li}>Blog</li></Link>
                         <Link className={styles.nodirection} href="/Faq"><li className={styles.li}>FAQ</li></Link>
-                        <Link className={styles.nodirection} href="/Contacts"><li className={styles.li}>Contacts</li></Link>
+                        <Link className={styles.nodirection} href="/ContactsPage"><li className={styles.li}>Contacts</li></Link>
                         <li className={styles.languages}>En <Image src={arrowPng} alt='' /></li>
                         <button className={styles.buttonLeav}>Leave a request</button>
                     </div>
