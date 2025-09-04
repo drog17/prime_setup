@@ -43,12 +43,6 @@ export default function Ower() {
                             <br /> business needs.</p>
                     </div>
                 </div>
-
-                <ul>
-                    <li>dadag</li>
-                    <li>agjaagg</li>
-                </ul>
-
                 <div className={styles.boxs2}>
                     <div className={styles.box2}>
                         <div className={styles.times}>
