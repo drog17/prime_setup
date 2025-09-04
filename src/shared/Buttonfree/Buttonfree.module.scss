@@ -1,0 +1,21 @@
+.button{
+    margin-top: 30px;
+    margin-left: 377px;
+    width: 348px;
+        border-radius: 10px;
+        height: 59px;
+        background-color: white;
+        border: none;
+        font-size: 24px;
+        padding: 15px;
+        color: #134397;
+            cursor: pointer;
+    background-image: linear-gradient(to right,#d62828); 
+    background-size: 0% 100%; 
+    background-repeat: no-repeat;
+    transition: background-size 1s ease, background-color 1s ease, color 1s ease;
+    }
+.button:hover{
+            background-size: 100% 100%; 
+    color: white;
+}

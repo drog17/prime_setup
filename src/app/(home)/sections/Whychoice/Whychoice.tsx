@@ -5,7 +5,8 @@ export default function Whychoice() {
         <section className={styles.Why}>
             <div className={styles.box}>
             <div className={styles.choice}>
-                <h1>Why Choose Prime Setup for <br /> Business Setup in Dubai</h1>
+                <h1>Why Choose Prime Setup for 
+                    <br />Business Setup in Dubai</h1>
                 <p> Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, 
                     <br />and efficient. With over 15 years of experience, we have helped hundreds of
                     <br /> entrepreneurs and companies establish themselves in the UAE, guiding them through

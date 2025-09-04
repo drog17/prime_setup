@@ -1,75 +1,80 @@
 import Image from 'next/image'
-import  styles from './Userfull.module.scss'
+import styles from './Userfull.module.scss'
+import Link from 'next/link'
+
 export default function Userfull() {
-return (
-<section className={styles.section}>
-    <div className={styles.Userfull}>
-        <h1>Useful articles and tips</h1>
-        <h3>Stay up to date with the latest news on UAE business, visas, licenses and more.</h3>
-    </div>
-    <div className={styles.Group}>
-    <div className={styles.container}>
-        <div className={styles.boxs}>
-            <div className={styles.box}>
-                <div className={styles.div}></div>
-                <div className={styles.text}>
-                    <h2>How to open a company in 
-                        <br />Dubai: Step-by-step 
-                        <br />instructions</h2>
-                    <p>Starting a business in Dubai is easy. We 
-                        <br />tell you where to start, what documents
-                        <br /> you need and how long the registration 
-                        <br />process takes.</p>
-                </div>
-                <div className={styles.read}>
-                                      <a href=""><span>Read more</span> 
-<Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9}/>
-</a>
-                </div>
+    return (
+        <section className={styles.section}>
+            <div className={styles.Userfull}>
+                <h1>Useful articles and tips</h1>
+                <h3>Stay up to date with the latest news on UAE business, visas, licenses and more.</h3>
             </div>
+            <div className={styles.Group}>
+                <div className={styles.container}>
+                    <div className={styles.boxs}>
+                        <div className={styles.box}>
+                            <div className={styles.div}></div>
+                            <div className={styles.text}>
+                                <h2>How to open a company in
+                                    <br />Dubai: Step-by-step
+                                    <br />instructions</h2>
+                                <p>Starting a business in Dubai is easy. We
+                                    <br />tell you where to start, what documents
+                                    <br /> you need and how long the registration
+                                    <br />process takes.</p>
+                            </div>
+                            <div className={styles.read}>
+                                <Link href="/blog"><span>Read more</span>
+                                    <Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9} />
+                                </Link>
+                            </div>
+                        </div>
 
                         <div className={styles.box}>
-                <div className={styles.div}></div>
-                <div className={styles.text}>
-                    <h2>How to open a company in 
-                        <br />Dubai: Step-by-step 
-                        <br />instructions</h2>
-                    <p>Starting a business in Dubai is easy. We 
-                        <br />tell you where to start, what documents
-                        <br /> you need and how long the registration 
-                        <br />process takes.</p>
-                </div>
-                <div className={styles.read}>
-                   <a href=""><span>Read more</span> 
-<Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9}/>
-</a>
-                </div>
-            </div>
+                            <div className={styles.div}></div>
+                            <div className={styles.text}>
+                                <h2>How to open a company in
+                                    <br />Dubai: Step-by-step
+                                    <br />instructions</h2>
+                                <p>Starting a business in Dubai is easy. We
+                                    <br />tell you where to start, what documents
+                                    <br /> you need and how long the registration
+                                    <br />process takes.</p>
+                            </div>
+                            <div className={styles.read}>
+                                <Link href="/blog"><span>Read more</span>
+                                    <Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9} />
+                                </Link>
+                            </div>
+                        </div>
 
                         <div className={styles.box}>
-                <div className={styles.div}></div>
-                <div className={styles.text}>
-                    <h2>How to open a company in 
-                        <br />Dubai: Step-by-step 
-                        <br />instructions</h2>
-                    <p>Starting a business in Dubai is easy. We 
-                        <br />tell you where to start, what documents
-                        <br /> you need and how long the registration 
-                        <br />process takes.</p>
-                </div>
-                <div className={styles.read}>
-                   <a href=""><span>Read more</span> 
-<Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9}/>
-</a>
+                            <div className={styles.div}></div>
+                            <div className={styles.text}>
+                                <h2>How to open a company in
+                                    <br />Dubai: Step-by-step
+                                    <br />instructions</h2>
+                                <p>Starting a business in Dubai is easy. We
+                                    <br />tell you where to start, what documents
+                                    <br /> you need and how long the registration
+                                    <br />process takes.</p>
+                            </div>
+                            <div className={styles.read}>
+                                <Link href="/blog"><span>Read more</span>
+                                    <Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9} />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.btn}>
+                        <a href=""><button>View all articles</button></a>
+                        <div className={styles.rectan}>
+                            <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40} />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className={styles.btn}>
-<a href=""><button>View all articles</button></a>
-        </div>
-        </div>
-    </div>
-   <div className={styles.border}></div>
-</section>
-)
+            <div className={styles.border}></div>
+        </section>
+    )
 }

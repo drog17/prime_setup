@@ -1,7 +1,7 @@
 .section{
  margin-top: 150px;
- margin-left: 58px;
- margin-right: 58px;
+ padding-left: 58px;
+ padding-right: 58px;
  width: 100%;
 height: 760px;
 h1{
@@ -136,12 +136,32 @@ leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 0%;
 color: #D23216;
+      cursor: pointer;
+      background: transparent;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: color 0.3s ease;
+        }
+button::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top left, #d62828, #D23216);
+      transform: scaleX(0) scaleY(0);
+      transform-origin: bottom right;
+      transition: transform 1s ease;
+      z-index: -1;
+      border-radius: 6px;
 }
-button:hover{
-    cursor: pointer;
-    background: #D23216;
-    color: white;
-}
+
+    button:hover::before {
+      transform: scaleX(1) scaleY(1);
+    }
+
+    button:hover {
+      color: white;
+    }
 .rectan{
     margin-top: 15px;
     margin-left: 168px;
