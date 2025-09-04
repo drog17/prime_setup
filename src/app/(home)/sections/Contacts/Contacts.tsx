@@ -1,10 +1,22 @@
 "use client";
 import { useState } from "react";
-import styles from "./contacts.module.scss";
+import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-
-export default function Contacts() {
+import Image from 'next/image';
+import facebook from '../../../../../public/assets/Facebook-Icon (1).svg'
+import twitter from '../../../../../public/assets/Twitter-Icon (1).svg'
+import instagram from '../../../../../public/assets/Instagram-Icon (1).svg'
+import  linkedin from '../../../../../public/assets/LinkedIn-Icon (1).svg'
+import youtube from '../../../../../public/assets/Youtube-Icon (1).svg'
+import polygon9 from '../../../../../public/assets/Polygon 9.png'
+import polygon10 from '../../../../../public/assets/Polygon 10.png'
+import polygon11 from '../../../../../public/assets/Polygon 11.png'
+import polygon12 from '../../../../../public/assets/Polygon 12.png'
+import polygon13 from '../../../../../public/assets/Polygon 13.png'
+import polygon51 from '../../../../../public/assets/Polygon 5 (1).png'
+import polygon8 from '../../../../../public/assets/Polygon 8.png'
+export default function Contacts2() {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -26,18 +38,29 @@ export default function Contacts() {
 
     return (
         <section className={styles.contacts}>
+            <Image src={polygon9}  alt='' className={styles.polygon9}/>
+            <Image src={polygon10}  alt='' className={styles.polygon10}/>
+            <Image src={polygon11}  alt='' className={styles.polygon11}/>
+            <Image src={polygon12}  alt='' className={styles.polygon12}/>
+            <Image src={polygon13}  alt='' className={styles.polygon13}/>
+            <Image src={polygon51}  alt='' className={styles.polygon51}/>
+            <Image src={polygon8}  alt='' className={styles.polygon8}/>
             <Container>
                 <div className={styles.content}>
                     <div className={styles.left}>
-                        <h2 className={styles.title}>Start your journey to the <br /> UAE today</h2>
-                        <p className={styles.text}>
-                            We are here to answer your questions and <br /> help with starting a business in the UAE.
-                        </p>
-
-                        <h3 className={styles.subtitle}>Working hours</h3>
-                        <p>Monday to Friday: 8:30 AM – 5:30 PM</p>
-                        <p>Saturday: 10:00 AM – 2:00 PM</p>
-
+                        <h2 className={styles.title}>Давайте начнем</h2>
+                        <p className={styles.text}>Мы с радостью проконсультируем вас<br/> лично.</p>
+                        <div className={styles.s1s2}>
+                            <div className={styles.s1}>
+                                <h3 className={styles.subtitle}>Рабочие часы</h3>
+                                <p>Monday to Friday:<br/> 8:30 AM – 5:30 PM</p>
+                                <p>Saturday:<br/> 10:00 AM – 2:00 PM</p>
+                            </div>
+                            <div className={styles.s1}>
+                                <h3 className={styles.subtitle}>Адрес офиса:</h3>
+                                <p>Prime Setup Business<br/>Sheikh Zayed Road, Dubai, UAE</p>
+                            </div>
+                              </div>
                         <div className={styles.contactInfo}>
                             <p>
                                 <FaEnvelope className={styles.icon} />{" "}
@@ -48,14 +71,20 @@ export default function Contacts() {
                                 <a href="tel:+996476924">+996 476-924</a>
                             </p>
                         </div>
+                        <div className={styles.sotsialImages}>
+                                <Image src={facebook}  alt='' />
+                                <Image src={twitter}  alt='' className={styles.images} />
+                                <Image src={instagram}  alt='' className={styles.images}/>
+                                <Image src={linkedin}  alt='' className={styles.images}/>
+                                <Image src={youtube}  alt='' className={styles.images} />
+                        </div>
                     </div>
-
+                    
                     <form className={styles.form} onSubmit={handleSubmit}>
                         <div className={styles.row}>
                             <div className={styles.name}>
                                 <h3>First Name</h3>
                                 <input
-                                name="firstName"
                                     type="text"
                                     placeholder="Enter full name"
                                     value={formData.firstName}
@@ -66,7 +95,6 @@ export default function Contacts() {
                             <div className={styles.lastname}>
                                 <h3>Last Name</h3>
                                 <input
-                                name="lastName"
                                     type="text"
                                     placeholder="Enter full surname"
                                     value={formData.lastName}
@@ -79,7 +107,6 @@ export default function Contacts() {
                         <div className={styles.email}>
                             <h3>Email Addres</h3>
                             <input
-                            name="email"
                                 type="email"
                                 placeholder="Enter email address"
                                 value={formData.email}
@@ -91,7 +118,6 @@ export default function Contacts() {
                         <div className={styles.phone}>
                             <h3>Phone Number</h3>
                             <input
-                            name="phone"
                                 type="tel"
                                 placeholder="Enter phone number"
                                 value={formData.phone}
@@ -121,3 +147,4 @@ export default function Contacts() {
         </section>
     );
 }
+

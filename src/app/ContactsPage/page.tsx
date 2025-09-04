@@ -1,5 +1,5 @@
 
-import Contacts2 from '../(home)/sections/Contacts2/Contacts2'
+import Contacts2 from '../(home)/sections/Contacts/Contacts'
 import Buttontg from '../(home)/sections/hero/buttontg/Buttontg'
 import styles from '../ContactsPage/contact/Contact.module.scss'
 
