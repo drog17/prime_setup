@@ -5,6 +5,7 @@ import Btnfree from '../(home)/sections/hero/btnconsultating/Btnfree'
 import Buttontg from '../(home)/sections/hero/buttontg/Buttontg'
 import Spectr from './spectr/Spectr'
 import Start from './start/page'
+import Footer from '@/widget/footer/Footer'
 function page() {
   return (
     <>
@@ -16,8 +17,8 @@ function page() {
       <p className={styles.p}>
         Prime Setup offers clear, step-by-step support for business setup<br/> in Dubai. From company registration to licensing and ongoing<br/>assistance, we guide you through each stage.
       </p>
-      <div className={styles.button}>
-         <Btnfree/>
+      <div className={styles.btn}>
+        <Btnfree/>
       </div>
     </div>
     <div className={styles.buttontg}><Buttontg/></div>
@@ -27,6 +28,7 @@ function page() {
     <div className={styles.start}>
       <Start/>
     </div>
+       <Footer/>
     </>
   )
 }

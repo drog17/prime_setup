@@ -1,0 +1,64 @@
+.add{
+    margin-top: 50px;
+    margin-left: 50px;
+    .btn{
+        width: 633px;
+height: 130px;
+border-radius: 10px;
+gap: 30px;
+padding-top: 35px;
+padding-right: 50px;
+padding-bottom: 35px;
+padding-left: 50px;
+background: #134397;
+display: flex;
+.addstate{
+    img{
+        position: absolute;
+        margin: 15px;
+    }
+    button{
+        width: 266px;
+height: 60px;
+border-radius: 10px;
+padding: 15px;
+gap: 10px;
+background: white;
+color: black;
+border: none;
+font-family: Gilroy-Bold;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+    }
+    &.active button{
+        background: #D23216;
+        color: white;
+    }
+}
+.publisher{
+        img{
+        position: absolute;
+        margin: 15px;
+    }
+    button{
+    width: 237px;
+height: 60px;
+border-radius: 10px;
+padding: 15 0 15 15px;
+gap: 10px;
+background: white;
+color: black;
+border: none;
+font-family: Gilroy-Bold;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+    }
+        &.active button{
+        background: #D23216;
+        color: white;
+    }
+}
+    }
+}

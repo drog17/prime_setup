@@ -1,12 +1,14 @@
 "use client"
 import useLangStore from '@/shared/Constants/useLangStore'
 import styles from './Btnfree.module.scss'
+import Link from 'next/link'
 
 function Btnfree() {
     const { lang, set } = useLangStore()
   return (
     <div>
-      <button className={styles.button}>{lang==="EN" ? ButtonfreeEn.title : ButtonfreeRu.title}</button>
+
+      <Link href="/ContactsPage"> <button className={styles.button}>{lang==="EN" ? ButtonfreeEn.title : ButtonfreeRu.title}</button></Link> 
     </div>
   )
 }

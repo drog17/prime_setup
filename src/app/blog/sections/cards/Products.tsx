@@ -24,7 +24,6 @@ export default function SearchSection() {
                     <h1 className={styles.title}>
                         Что вас интересует?
                     </h1>
-
                     <div className={styles.searchContainer}>
                         <input
                             type="text"

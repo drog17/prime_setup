@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image'
 import styles from './Uslugi.module.scss'
+import Link from 'next/link'
 import useLangStore from '@/shared/Constants/useLangStore'
 import UsligiEn from '@/shared/Constants/lang/en/HomeEn/UslugiEn'
 import UsligiRu from '@/shared/Constants/lang/ru/HomeRu/UslugiRu'
@@ -69,12 +70,6 @@ export default function Uslugi() {
                     </div>
                 </div>
 
-                <div className={styles.btn}>
-                    <button>{lang === "EN" ? UsligiEn.btn : UsligiRu.btn}</button>
-                    <div className={styles.rectan}>
-                        <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40} />
-                    </div>
-                </div>
             </Container>
         </section>
     )

@@ -2,7 +2,6 @@ import styles from './Start.module.scss'
 import frame34209 from '../../../../public/assets/Frame 34209 (3).png'
 import Image from 'next/image';
 import ZapisatsaNaConsult from './ZapisatsaNaConsult/page'
-import Footer from '@/widget/footer/Footer';
 function page() {
   return (
     <>
@@ -14,7 +13,6 @@ function page() {
               <ZapisatsaNaConsult/>
             </div>
       </section>
-      <Footer/>
     </>
   )
 }
