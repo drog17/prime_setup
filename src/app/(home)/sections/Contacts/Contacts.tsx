@@ -1,8 +1,17 @@
 "use client";
 import { useState } from "react";
-import styles from "./contacts.module.scss";
+import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import useLangStore from "@/shared/Constants/useLangStore";
+import ContactEn from "@/shared/Constants/lang/en/HomeEn/ContactEn";
+import ContactRu from "@/shared/Constants/lang/ru/HomeRu/ContactRu";
+import Image from 'next/image';
+import facebook from '../../../../../public/assets/Facebook-Icon (1).svg'
+import twitter from '../../../../../public/assets/Twitter-Icon (1).svg'
+import instagram from '../../../../../public/assets/Instagram-Icon (1).svg'
+import  linkedin from '../../../../../public/assets/LinkedIn-Icon (1).svg'
+import youtube from '../../../../../public/assets/Youtube-Icon (1).svg'
 
 export default function Contacts() {
     const [formData, setFormData] = useState({
@@ -23,6 +32,7 @@ export default function Contacts() {
         alert("Message sent!");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
     };
+    const {lang,set}=useLangStore()
 
     return (
         <section className={styles.contacts}>
@@ -48,14 +58,20 @@ export default function Contacts() {
                                 <a href="tel:+996476924">+996 476-924</a>
                             </p>
                         </div>
+                        <div className={styles.sotsialImages}>
+                                <Image src={facebook}  alt='' />
+                                <Image src={twitter}  alt='' className={styles.images} />
+                                <Image src={instagram}  alt='' className={styles.images}/>
+                                <Image src={linkedin}  alt='' className={styles.images}/>
+                                <Image src={youtube}  alt='' className={styles.images} />
+                        </div>
                     </div>
-
+                    
                     <form className={styles.form} onSubmit={handleSubmit}>
                         <div className={styles.row}>
                             <div className={styles.name}>
-                                <h3>First Name</h3>
+                                <h3>{lang==="EN" ? ContactEn.name : ContactRu.name}</h3>
                                 <input
-                                name="firstName"
                                     type="text"
                                     placeholder="Enter full name"
                                     value={formData.firstName}
@@ -64,9 +80,8 @@ export default function Contacts() {
                                 />
                             </div>
                             <div className={styles.lastname}>
-                                <h3>Last Name</h3>
+                                <h3>{lang==="EN" ? ContactEn.lastname : ContactRu.lastname}</h3>
                                 <input
-                                name="lastName"
                                     type="text"
                                     placeholder="Enter full surname"
                                     value={formData.lastName}
@@ -77,9 +92,8 @@ export default function Contacts() {
                         </div>
 
                         <div className={styles.email}>
-                            <h3>Email Addres</h3>
+                            <h3>{lang==="EN" ? ContactEn.email : ContactRu.email}</h3>
                             <input
-                            name="email"
                                 type="email"
                                 placeholder="Enter email address"
                                 value={formData.email}
@@ -89,9 +103,8 @@ export default function Contacts() {
                         </div>
 
                         <div className={styles.phone}>
-                            <h3>Phone Number</h3>
+                            <h3>{lang==="EN" ? ContactEn.phone : ContactRu.phone}</h3>
                             <input
-                            name="phone"
                                 type="tel"
                                 placeholder="Enter phone number"
                                 value={formData.phone}
@@ -99,9 +112,8 @@ export default function Contacts() {
                                 required
                             />
                         </div>
-
                         <div>
-                            <h3>How Can We Help You?</h3>
+                            <h3>{lang==="EN" ? ContactEn.message : ContactRu.message}</h3>
                             <textarea
                                 name="message"
                                 placeholder="Enter your message"
@@ -112,12 +124,11 @@ export default function Contacts() {
                             ></textarea>
                         </div>
 
-                        <button type="submit" className={styles.sendBtn}>
-                            Send
-                        </button>
+                        <button type="submit" className={styles.sendBtn}>{lang==="EN" ? ContactEn.btn : ContactRu.btn}</button>
                     </form>
                 </div>
             </Container>
         </section>
     );
 }
+

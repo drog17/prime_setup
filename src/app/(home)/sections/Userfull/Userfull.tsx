@@ -1,13 +1,29 @@
+"use client"
 import Image from 'next/image'
 import styles from './Userfull.module.scss'
 import Link from 'next/link'
+import useLangStore from '@/shared/Constants/useLangStore'
+
+
+
+const UseEn={
+    title:"Useful articles and tips",
+    subtitle:"Stay up to date with the latest news on UAE business, visas, licenses and more."
+}
+
+const UseRu={
+    title:"Полезные статьи и советы",
+    subtitle:"Будьте в курсе последних новостей о бизнесе в ОАЭ, визах, лицензиях и многом другом."
+}
 
 export default function Userfull() {
+    const {lang,set}=useLangStore()
+
     return (
         <section className={styles.section}>
             <div className={styles.Userfull}>
-                <h1>Useful articles and tips</h1>
-                <h3>Stay up to date with the latest news on UAE business, visas, licenses and more.</h3>
+                <h2>{lang==="EN" ? UseEn.title : UseRu.title}</h2>
+                <p>{lang==="EN" ? UseEn.subtitle : UseRu.subtitle}</p>
             </div>
             <div className={styles.Group}>
                 <div className={styles.container}>

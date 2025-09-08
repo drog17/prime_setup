@@ -1,36 +1,41 @@
-.UAEcontainer{
+.UAEcontainer {
     border-radius: 20px;
     padding: 67px 121px;
     width: 1034px;
     height: 420px;
     background-color: #134397;
 }
-.h1{
-   font-family: var(--second-family);
-font-weight: 400;
-font-size: 48px;
-line-height: 115%;
-text-align: center;
-color: #fff;
-a{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.ps{
+
+.h2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 115%;
+    text-align: center;
     color: #fff;
+
+    a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ps {
+        color: #fff;
+    }
 }
-}
-.p{
+
+.p {
     font-family: var(--third-family);
-font-weight: 400;
-font-size: 22px;
-line-height: 113%;
-text-align: center;
-color: #fff;
-padding-top: 30px;
-padding-bottom: 45px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 113%;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 45px;
 }
-.Btnfree{
+
+.Btnfree {
     display: flex;
     align-items: center;
     justify-content: center;

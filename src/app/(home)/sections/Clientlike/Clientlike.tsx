@@ -3,8 +3,12 @@ import { useState } from "react"
 import Image from "next/image"
 import styles from "./Clientlike.module.scss"
 import ClientSwiper from "./ClientSwiper"
+import useLangStore from '@/shared/Constants/useLangStore'
+
 
 export default function Clientlike() {
+      const {lang,set}=useLangStore()
+
   const [isOpen, setIsOpen] = useState(false)
   const [rating, setRating] = useState(0) 
 
@@ -27,7 +31,7 @@ export default function Clientlike() {
 
   return (
     <section className={styles.section}>
-      <h1>Successes shared by our clients</h1>
+      <h2>{lang==="EN" ? ClientlikeEn.title : ClientlikeRu.title</h2>
       <div className={styles.page}>
         <div className={styles.logo}>
           <div className={styles.boxs}>
@@ -36,7 +40,7 @@ export default function Clientlike() {
 
           <div className={styles.btn}>
             <a href="">
-              <button onClick={handleOpen}>Leave a review</button>
+              <button onClick={handleOpen}>{lang==="EN" ? ClientlikeEn.btn : ClientlikeRu.btn}</button>
             </a>
             <div className={styles.rectan}>
               <Image
@@ -105,4 +109,11 @@ export default function Clientlike() {
       )}
     </section>
   )
+  const ClientlikeEn={
+    title:"Successes shared by our clients",
+    btn:"Leave a review"
+}
+const ClientlikeRu={
+    title:"Успехи, которыми делятся наши клиенты",
+    btn:"Оставить отзыв"
 }
