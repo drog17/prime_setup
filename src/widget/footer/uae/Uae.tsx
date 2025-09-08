@@ -1,15 +1,17 @@
 import styles from './Uae.module.scss'
-import frame34158 from '../../../../public/assets/Frame 34158.jpg'
-import Image from 'next/image';
 import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree';
+import UaeEn from '@/shared/Constants/lang/en/footerEn/UaeEn';
+import UaeRu from '@/shared/Constants/lang/ru/FooterRu/UaeRu';
+import useLangStore from '@/shared/Constants/useLangStore';
+
 function Uae() {
+  const { lang, set } = useLangStore()
   return (
     <>
       <div className={styles.UAEcontainer}>
-        <h1 className={styles.h1}>Open a business in the UAE with
-          <br /><a href="" className={styles.ps}>PRIME SETUP</a>today</h1>
-        <p className={styles.p}>We will help you at all stages - from registration to opening a bank account. Start your path to success with us!</p>
-        <div className={styles.Btnfree}><Btnfree/></div>
+        <h2 className={styles.h2}>{lang==="EN" ? UaeEn.h2 : UaeRu.h2}</h2>
+        <p className={styles.p}>{lang==="EN" ? UaeEn.p : UaeRu.p}</p>
+        <div className={styles.Btnfree}><Btnfree /></div>
       </div>
     </>
   )

@@ -71,7 +71,7 @@ export default function App() {
                   <Image src={polygon5} alt='polygon5' className={styles.polygon5}/>
                   <Image src={polygon4} alt='polygon5' className={styles.polygon4}/>
                   <div className={styles.card}>
-                    <h2 className={styles.h2Title}>{items.map((items) => (<h1 className={styles.number}>{items.number}</h1>))}
+                    <h2 className={styles.h2Title}>{items.map((items) => <h2 className={styles.number} key={items.number}>{items.number}</h2>)}
                     {items[activeIndex].title}</h2> 
                     <p className={styles.pContent}>{items[activeIndex].content}</p>
                   </div>

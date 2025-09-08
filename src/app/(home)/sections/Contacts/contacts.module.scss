@@ -36,6 +36,15 @@
             color: var(--zagol);
         }
 
+        .sotsialImages {
+            margin-top: 35px;
+            gap: 10px;
+
+            .images {
+                margin-left: 15px;
+            }
+        }
+
         .contactInfo {
             margin-top: 35px;
             font-family: var(--second-family);
@@ -126,29 +135,27 @@
             height: 147px;
         }
 
-.sendBtn {
-    border-radius: 10px;
-    width: 180px;
-    height: 59px;
-    font-family: var(--font3);
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
-    background-color: #D23216; 
-    border: none;
-    cursor: pointer;
-    background-image: linear-gradient(to right,#134397); 
-    background-size: 0% 100%; 
-    background-repeat: no-repeat;
-    transition: background-size 1s ease, background-color 1s ease, color 1s ease;
-}
+        .sendBtn {
+            border-radius: 10px;
+            width: 180px;
+            height: 59px;
+            font-family: var(--font3);
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+            background-color: #D23216;
+            border: none;
+            cursor: pointer;
+            background-image: linear-gradient(to right, #134397);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            transition: background-size 1s ease, background-color 1s ease, color 1s ease;
+        }
 
-.sendBtn:hover {
-    background-size: 100% 100%; 
-    color: #fff;
-}
-
-
+        .sendBtn:hover {
+            background-size: 100% 100%;
+            color: #fff;
+        }
     }
 }

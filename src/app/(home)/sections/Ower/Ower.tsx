@@ -1,79 +1,76 @@
+"use client"
 import Image from 'next/image'
 import styles from './Ower.module.scss'
 import Container from '@/shared/ui/Container'
+import useLangStore from '@/shared/Constants/useLangStore'
+import OwerEn from '@/shared/Constants/lang/en/HomeEn/OwerEn'
+import OwerRu from '@/shared/Constants/lang/ru/HomeRu/OwerRu'
 export default function Ower() {
+    const {lang,set}=useLangStore()
     return (
         <section className={styles.Ower}>
             <Container>
                 <div className={styles.contend}>
-                <div className={styles.boxs}>
-                    <div className={styles.box1}>
-                        <div className={styles.medal}>
-                            <Image src={"/assets/Component 1 (1).svg"} alt='medal' height={100} width={100} />
-                            <div className={styles.span}>
-                                <span>Over 15 Years of <br />
-                                    Experience</span>
+                    <div className={styles.boxs}>
+                        <div className={styles.box1}>
+                            <div className={styles.medal}>
+                                <Image src={"/assets/Component 1 (1).svg"} alt='medal' height={100} width={100} />
+                                <div className={styles.span}>
+                                    <span>{lang==="EN" ? OwerEn.medalSpan : OwerRu.medalSpan}</span>
+                                </div>
                             </div>
+                            <p>{lang==="EN" ? OwerEn.medalP : OwerRu.medalP}</p>
                         </div>
-                        <p>Guiding businesses into the UAE
-                            market since 2009 with proven
-                            expertise.</p>
-                    </div>
-                    <div className={styles.box1}>
-                        <div className={styles.pazzle}>
-                            <Image src={"/assets/Component 1 (2).svg"} alt='medal' height={100} width={100} />
-                            <div className={styles.span}>
-                                <span>Comprehensive <br />
-                                    Solutions</span>
+                        <div className={styles.box1}>
+                            <div className={styles.pazzle}>
+                                <Image src={"/assets/Component 1 (2).svg"} alt='medal' height={100} width={100} />
+                                <div className={styles.span}>
+                                    <span>{lang==="EN" ? OwerEn.pazzleSpan : OwerRu.pazzleSpan}</span>
+                                </div>
                             </div>
+                            <p>{lang==="EN" ? OwerEn.pazzleP : OwerRu.pazzleP}</p>
                         </div>
-                        <p>All services under one roof, from
-                            <br /> company setup to ongoing
-                            <br /> support.</p>
-                    </div>
-                    <div className={styles.box1}>
-                        <div className={styles.ruki}>
-                            <Image src={"/assets/Component 1 (3).svg"} alt='medal' height={100} width={100} />
-                            <div className={styles.span}>
-                                <span>Personalised Service</span>
+                        <div className={styles.box1}>
+                            <div className={styles.ruki}>
+                                <Image src={"/assets/Component 1 (3).svg"} alt='medal' height={100} width={100} />
+                                <div className={styles.span}>
+                                    <span>{lang==="EN" ? OwerEn.rukiSpan : OwerRu.rukiSpan}</span>
+                                </div>
                             </div>
+                            <p>{lang==="EN" ? OwerEn.rukiP : OwerRu.rukiP}</p>
                         </div>
-                        <p>Advice and solutions
-                            <br /> tailored to your unique
-                            <br /> business needs.</p>
                     </div>
-                </div>
-                <div className={styles.boxs2}>
-                    <div className={styles.box2}>
-                        <div className={styles.times}>
-                            <Image src={"/assets/Component 1 (4).svg"} alt='medal' height={100} width={100} />
-                            <div className={styles.span}>
-                                <span>Fast Registration</span>
+                    <div className={styles.boxs2}>
+                        <div className={styles.box2}>
+                            <div className={styles.times}>
+                                <Image src={"/assets/Component 1 (4).svg"} alt='medal' height={100} width={100} />
+                                <div className={styles.span}>
+                                    <span>{lang==="EN" ? OwerEn.timesSpan : OwerRu.timesSpan}</span>
+                                </div>
                             </div>
+                            <p>{lang==="EN" ? OwerEn.timesP : OwerRu.timesP}</p>
                         </div>
-                        <p>Start your business in as little as 48 hours.</p>
-                    </div>
-                    <div className={styles.box2}>
-                        <div className={styles.support}>
-                            <Image src={"/assets/Component 1 (5).svg"} alt='medal' height={100} width={100} />
-                            <div className={styles.span}>
-                                <span>24/7 Support</span>
+                        <div className={styles.box2}>
+                            <div className={styles.support}>
+                                <Image src={"/assets/Component 1 (5).svg"} alt='medal' height={100} width={100} />
+                                <div className={styles.span}>
+                                    <span>{lang==="EN" ? OwerEn.supportSpan : OwerRu.supportSpan}</span>
+                                </div>
                             </div>
+                            <p>{lang==="EN" ? OwerEn.supportP : OwerRu.supportP}</p>
                         </div>
-                        <p>Round-the-clock assistance whenever you need it.</p>
-                    </div>
-                    <div className={styles.box2}>
-                        <div className={styles.security}>
-                            <Image src={"/assets/Component 1 (6).svg"} alt='medal' height={100} width={100} />
-                            <div className={styles.span}>
-                                <span>Trusted Network</span>
+                        <div className={styles.box2}>
+                            <div className={styles.security}>
+                                <Image src={"/assets/Component 1 (6).svg"} alt='medal' height={100} width={100} />
+                                <div className={styles.span}>
+                                    <span>{lang==="EN" ? OwerEn.securitySpan : OwerRu.securitySpan}</span>
+                                </div>
                             </div>
+                            <p>{lang==="EN" ? OwerEn.securityP : OwerRu.securityP}</p>
                         </div>
-                        <p>Strong partnerships with banks and government agencies for a smooth setup.</p>
                     </div>
-                </div>
                 </div>
             </Container>
-                    </section>
+        </section>
     )
 }
