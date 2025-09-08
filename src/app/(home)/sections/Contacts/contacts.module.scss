@@ -1,39 +1,77 @@
 .contacts {
-    background: white;
+    position: relative;
     display: flex;
     padding: 105px 0;
     max-width: 100%;
-
+    margin-top: 200px;
+    background:  #fff;;
+    .polygon9{
+        position: absolute;
+        margin-top: -250px;
+    }
+    .polygon10{
+         position: absolute;
+         margin-left: 500px;
+         margin-top: -270px;
+    }
+    .polygon11{
+         position: absolute;
+         margin-left: 630px;
+         margin-top: -100px;
+    }
+     .polygon12{
+         position: absolute;
+         margin-left: 1350px;
+         margin-top: -150px;
+    }
+     .polygon13{
+         position: absolute;
+         margin-left: 1240px;
+         margin-top: -190px;
+    }
+     .polygon51{
+         position: absolute;
+         margin-top: 450px;
+    }
+     .polygon8{
+         position: absolute;
+         margin-left: 1139px;
+         margin-top: 390px;
+    }
     .content {
         display: flex;
         gap: 96px;
-
         .left {
+            
             min-width: 300px;
             gap: 35px;
         }
-
         .title {
-            font-family: var(--second-family);
-            font-weight: 400;
-            font-size: 46px;
-            line-height: 109%;
-            color: #d62828;
+           font-family: var(--second-family);
+           font-weight: 400;
+           font-size: 46px;
+           line-height: 109%;
+            color: #0a2463;
         }
-
         .text {
-            font-family: var(--third-family);
-            font-weight: 400;
+           font-family: var(--third-family);
+           font-weight: 400;
             font-size: 22px;
             color: #000;
+            margin-top: 20px;
+            margin-bottom: 35px;
         }
-
+        .s1s2{
+            display: flex;
+            gap: 50px;
+        }
         .subtitle {
-            font-family: var(--second-family);
-            font-weight: 400;
-            font-size: 26px;
-            line-height: 135%;
+           font-family: var(--second-family);
+           font-weight: 400;
+           font-size: 26px;
+           line-height: 135%;
             color: var(--zagol);
+            color: #0a2463;
         }
 
         .sotsialImages {
@@ -54,7 +92,13 @@
             color: var(--zagol);
             gap: 12px;
         }
-
+         .sotsialImages{
+            margin-top: 35px;
+            gap: 10px;
+             .images{
+                margin-left: 15px;
+            }
+         }
         .contactInfo p {
             display: flex;
             align-items: center;
@@ -88,7 +132,6 @@
             padding: 15px 23px;
             width: 420px;
             border: none;
-            outline: none;
             font-family: var(--font6);
             font-weight: 300;
             font-size: 14px;
@@ -153,9 +196,11 @@
             transition: background-size 1s ease, background-color 1s ease, color 1s ease;
         }
 
-        .sendBtn:hover {
-            background-size: 100% 100%;
-            color: #fff;
-        }
+.sendBtn:hover {
+    background-size: 100% 100%; 
+    color: #fff;
+}
+
+
     }
 }

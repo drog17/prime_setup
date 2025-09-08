@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./contacts.module.scss";
+import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import useLangStore from "@/shared/Constants/useLangStore";
@@ -39,8 +39,11 @@ export default function Contacts() {
             <Container>
                 <div className={styles.content}>
                     <div className={styles.left}>
-                        <h2 className={styles.title}>{lang==="EN" ? ContactEn.title : ContactRu.title}</h2>
-                        <p className={styles.text}>{lang==="EN" ? ContactEn.text : ContactRu.text}</p>
+                        <h2 className={styles.title}>Start your journey to the <br /> UAE today</h2>
+                        <p className={styles.text}>
+                            We are here to answer your questions and <br /> help with starting a business in the UAE.
+                        </p>
+
                         <h3 className={styles.subtitle}>Working hours</h3>
                         <p>Monday to Friday: 8:30 AM – 5:30 PM</p>
                         <p>Saturday: 10:00 AM – 2:00 PM</p>
@@ -63,13 +66,12 @@ export default function Contacts() {
                                 <Image src={youtube}  alt='' className={styles.images} />
                         </div>
                     </div>
-
+                    
                     <form className={styles.form} onSubmit={handleSubmit}>
                         <div className={styles.row}>
                             <div className={styles.name}>
                                 <h3>{lang==="EN" ? ContactEn.name : ContactRu.name}</h3>
                                 <input
-                                name="firstName"
                                     type="text"
                                     placeholder="Enter full name"
                                     value={formData.firstName}
@@ -80,7 +82,6 @@ export default function Contacts() {
                             <div className={styles.lastname}>
                                 <h3>{lang==="EN" ? ContactEn.lastname : ContactRu.lastname}</h3>
                                 <input
-                                name="lastName"
                                     type="text"
                                     placeholder="Enter full surname"
                                     value={formData.lastName}
@@ -93,7 +94,6 @@ export default function Contacts() {
                         <div className={styles.email}>
                             <h3>{lang==="EN" ? ContactEn.email : ContactRu.email}</h3>
                             <input
-                            name="email"
                                 type="email"
                                 placeholder="Enter email address"
                                 value={formData.email}
@@ -105,7 +105,6 @@ export default function Contacts() {
                         <div className={styles.phone}>
                             <h3>{lang==="EN" ? ContactEn.phone : ContactRu.phone}</h3>
                             <input
-                            name="phone"
                                 type="tel"
                                 placeholder="Enter phone number"
                                 value={formData.phone}
@@ -132,3 +131,4 @@ export default function Contacts() {
         </section>
     );
 }
+
