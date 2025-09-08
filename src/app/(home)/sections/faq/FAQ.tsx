@@ -4,6 +4,7 @@ import styles from "./faq.module.scss";
 import Container from "@/shared/ui/Container";
 import Image from "next/image";
 import faqs from '@/types/Faq/Faq'
+import Link from "next/link";
 
 
 export default function FAQ() {
@@ -47,7 +48,7 @@ export default function FAQ() {
             ))}
           </div>
           <div className={styles.readMore}>
-            <button>Read all answers</button>
+           <Link href="/Faq"><button>Read all answers</button></Link> 
             <div className={styles.rectan}>
               <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40} />
             </div>

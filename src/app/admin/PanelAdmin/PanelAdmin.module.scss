@@ -1,0 +1,33 @@
+.panel{
+    background: #134397;
+    width: 100%;
+    height: 140px;
+    .contend{
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            padding-top: 44px;
+            font-family: Gilroy-Bold;
+font-weight: 400;
+font-size: 42px;
+line-height: 100%;
+color: white;
+        }
+        .foto{
+            padding-top: 30px;
+display: flex;
+gap: 20px;
+span{
+    padding-top: 24.5px;
+    font-family: Barlow Condensed;
+font-weight: 700;
+font-style: Bold;
+font-size: 26px;
+line-height: 100%;
+color: white;
+}
+        }
+    }
+}

@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import styles from './Btnfree.module.scss'
 
 function Btnfree() {
   return (
     <div>
-      <button className={styles.button}> Book a Free Consultation</button>
+    <Link href="/ContactsPage"> <button className={styles.button}> Book a Free Consultation</button></Link> 
     </div>
   )
 }

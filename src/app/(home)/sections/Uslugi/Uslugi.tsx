@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './Uslugi.module.scss'
+import Link from 'next/link'
 
 export default function Uslugi() {
     return (
@@ -67,7 +68,7 @@ export default function Uslugi() {
 </div>
 
 <div className={styles.btn}>
-   <a href=""> <button>Check out our services</button></a>
+ <Link href="/services"> <button>Check out our services</button></Link>
                <div className={styles.rectan}>
 <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40}/>
            </div>

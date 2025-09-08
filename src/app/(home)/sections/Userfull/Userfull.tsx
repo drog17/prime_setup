@@ -67,7 +67,7 @@ export default function Userfull() {
                         </div>
                     </div>
                     <div className={styles.btn}>
-                        <a href=""><button>View all articles</button></a>
+             <Link href="/blog">   <button>View all articles</button></Link>
                         <div className={styles.rectan}>
                             <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40} />
                         </div>

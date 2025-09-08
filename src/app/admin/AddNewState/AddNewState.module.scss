@@ -1,0 +1,213 @@
+.addstate{
+    margin-top: 100px;
+    width: 100%;
+    padding-left: 145px;
+    padding-right: 145px;
+    margin-bottom: 396px;
+    .contend{
+        display: flex;
+        flex-direction: column;
+        form{
+          .zagavok{
+            margin-top: 70px;
+            label{
+              font-family: Gilroy-Medium;
+font-weight: 400;
+font-size: 26px;
+line-height: 100%;
+color: #000000;
+            }
+          }
+            .text{
+            padding-top: 8px;
+                input{
+                    width: 100%;
+height: 70px;
+border-radius: 10px;
+padding: 20px;
+border-width: 1px;
+border: 1px solid #00000033;
+  background: white;  
+outline: none;
+}
+            }
+
+.obloshka{
+  margin-top: 35px;
+}
+        .textarea{
+          padding-top: 35px;
+            .texte{
+                margin-top: 8px;
+                textarea{
+                    width: 100%;
+height: 460px;
+gap: 10px;
+border-radius: 10px;
+border-width: 1px;
+padding-top: 22px;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+border: 1px solid #00000033;
+background: white;
+outline: none;
+                }
+            }
+        }
+        .data{
+          padding-top: 35px;
+          label{
+            font-family: Gilroy-Medium;
+font-weight: 400;
+font-size: 26px;
+line-height: 100%;
+color: black;
+
+          }
+            .publik{
+              padding-top: 8px;
+                input{
+                    width: 100%;
+height: 70px;
+gap: 10px;
+border-radius: 10px;
+padding: 20px;
+border-width: 1px;
+border: 1px solid #00000033;
+background: white;
+outline: none;
+                }
+            }
+        }
+        }
+    }
+    .btn{
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        .otmena{
+            width: 270px;
+height: 71px;
+gap: 10px;
+border-radius: 10px;
+border-width: 5px;
+padding-top: 20px;
+padding-right: 35px;
+padding-bottom: 20px;
+padding-left: 35px;
+border: 5px solid var(--333, #D23216);
+background: #D232161A;
+color: #D23216;
+font-family: SF Pro Display;
+font-weight: 700;
+font-style: Bold;
+font-size: 26px;
+line-height: 100%;
+text-align: center;
+        }
+        .sohranit{
+            width: 270px;
+height: 71px;
+gap: 10px;
+border-radius: 10px;
+padding-top: 20px;
+padding-right: 35px;
+padding-bottom: 20px;
+padding-left: 35px;
+background: #D23216;
+color: white;
+border: none;
+font-family: SF Pro Display;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 100%;
+text-align: center;
+
+        }
+    }
+}
+
+.fileInput {
+  display: none; 
+}
+
+.uploadBox {
+  margin-top: 10px;
+  width: 100%;
+  height: 500px; 
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fafafa;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: #134397;
+  }
+}
+
+.placeholder {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    width: 75px;
+    height: 75px;
+    opacity: 0.6;
+  }
+
+  button {
+    background: transparent;
+height: 47px;
+gap: 10px;
+border-radius: 10px;
+border-width: 1px;
+padding-top: 10px;
+padding-right: 13px;
+padding-bottom: 10px;
+padding-left: 13px;
+cursor: pointer;
+font-family: Gilroy-Medium;
+font-weight: 400;
+font-size: 26px;
+line-height: 100%;
+text-align: center;
+border: 1px solid #000000;
+color: #363636;
+    transition: all 0.3s ease;
+width: 410px;
+    &:hover {
+      background: #134397;
+      color: #fff;
+    }
+  }
+
+  p {
+    font-family: Gilroy-Regular;
+font-weight: 400;
+font-size: 20px;
+color: #ADADAD;
+  }
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.error {
+  margin-top: 8px;
+  color: red;
+  font-size: 14px;
+}
