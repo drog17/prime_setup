@@ -1,5 +1,4 @@
 "use client";
-
 import Container from "@/shared/ui/Container";
 import styles from "./free.module.scss";
 import Image from "next/image";

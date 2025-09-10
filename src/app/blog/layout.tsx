@@ -1,4 +1,6 @@
-import Header from "@/widget/header/Header";
+
+// import Header from "@/widget/header/Header";
+import Header from '../../widget/header/Header'
 import Footer from "@/widget/footer/Footer";
 import { TbBackground } from "react-icons/tb";
 

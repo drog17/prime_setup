@@ -1,7 +1,6 @@
+import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
 import styles from './Heros.module.scss'
-
-import { Buttonfree } from '@/shared/Buttonfree/Buttonfree'
-import  Buttonts from '@/shared/Buttonts/Buttonts'
+import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
 
 
 export default function Heros(){
@@ -13,9 +12,9 @@ return (
 </h1>
       <p className={styles.p}>Мы не просто консультируем — мы сопровождаем ваш успех с первого шага.
 Наша команда помогает предпринимателям из разных стран открыть бизнес в ОАЭ быстро, прозрачно и без стресса. Мы знаем, с чего начать и как избежать ошибок, потому что уже помогли сотням клиентов пройти этот путь.</p>
-      <Buttonfree/>
+      <Btnfree/>
     </div>
-    <div className={styles.buttontg}><Buttonts/></div>
+    <div className={styles.buttontg}><Buttontg/></div>
     </>
 )
 }

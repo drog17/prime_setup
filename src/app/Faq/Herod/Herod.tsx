@@ -1,6 +1,8 @@
-import { Buttonfree } from '@/shared/Buttonfree/Buttonfree'
+
+import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
 import styles from './Herod.module.scss'
-import Buttonts from '@/shared/Buttonts/Buttonts'
+import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
+
 
 export default function Herod(){
     return(
@@ -12,9 +14,9 @@ export default function Herod(){
 </h1>
       <p className={styles.p}>Мы собрали ответы на самые распространённые вопросы от наших клиентов. 
         <br />Если не нашли нужной информации — напишите нам, и мы поможем.</p>
-      <Buttonfree/>
+      <Btnfree/>
     </div>
-    <div className={styles.buttontg}><Buttonts/></div>
+    <div className={styles.buttontg}><Buttontg/></div>
     </>
     )
 }

@@ -1,3 +1,4 @@
+
 import Container from '@/shared/ui/Container'
 import styles from './detail.module.scss'
 import Image from 'next/image'
@@ -6,6 +7,7 @@ export default function Detail() {
 
     return (
         <>
+        <div className={styles.headerFon}></div>
             <section className={styles.detail}>
                 <Container>
                     <div className={styles.content}>
