@@ -4,13 +4,14 @@ import Image from "next/image"
 import styles from "./Clientlike.module.scss"
 import ClientSwiper from "./ClientSwiper"
 import useLangStore from '@/shared/Constants/useLangStore'
-
+import ClientlikeRu from "@/shared/Constants/lang/ru/HomeRu/ClientlikeRu"
+import ClientlikeEn from "@/shared/Constants/lang/en/HomeEn/ClientlikeEn"
 
 export default function Clientlike() {
-      const {lang,set}=useLangStore()
+  const { lang, set } = useLangStore()
 
   const [isOpen, setIsOpen] = useState(false)
-  const [rating, setRating] = useState(0) 
+  const [rating, setRating] = useState(0)
 
   const handleOpen = (e: React.MouseEvent) => {
     e.preventDefault()
@@ -24,14 +25,14 @@ export default function Clientlike() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    alert(`Спасибо за отзыв! Ваш рейтинг: ${rating}⭐`)
+    alert(lang === "EN" ? `Thank you for your feedback! Your rating:  ${rating}⭐️ `:`Спасибо за отзыв! Ваш рейтинг: ${rating}⭐️`)
     setIsOpen(false)
     setRating(0)
   }
 
   return (
     <section className={styles.section}>
-      <h2>{lang==="EN" ? ClientlikeEn.title : ClientlikeRu.title</h2>
+      <h2>{lang === "EN" ? ClientlikeEn.title : ClientlikeRu.title}</h2>
       <div className={styles.page}>
         <div className={styles.logo}>
           <div className={styles.boxs}>
@@ -40,7 +41,9 @@ export default function Clientlike() {
 
           <div className={styles.btn}>
             <a href="">
-              <button onClick={handleOpen}>{lang==="EN" ? ClientlikeEn.btn : ClientlikeRu.btn}</button>
+              <button onClick={handleOpen}>
+                {lang === "EN" ? ClientlikeEn.btn : ClientlikeRu.btn}
+              </button>
             </a>
             <div className={styles.rectan}>
               <Image
@@ -53,6 +56,7 @@ export default function Clientlike() {
           </div>
         </div>
       </div>
+
       {isOpen && (
         <div className={styles.modalOverlay} onClick={handleClose}>
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
@@ -64,14 +68,11 @@ export default function Clientlike() {
                 height={126.6}
               />
             </div>
-
-            {/* <button className={styles.close} onClick={handleClose}>
-              ✖️
-            </button> */}
             <form onSubmit={handleSubmit} className={styles.form}>
-              <input type="text" placeholder="Введите ваше имя" required />
+              <input type="text" 
+              placeholder={lang === "EN" ? ClientlikeEn.placeholder.input : ClientlikeRu.placeholder.input} 
+              required />
 
-          
               <div className={styles.rating}>
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Image
@@ -87,7 +88,7 @@ export default function Clientlike() {
               </div>
 
               <textarea
-                placeholder="Поделитесь своим мнением о нашем сервисе"
+                placeholder={lang==="EN" ? ClientlikeEn.placeholder.rextarea : ClientlikeRu.placeholder.textarea}
                 required
               />
 
@@ -97,10 +98,10 @@ export default function Clientlike() {
                   className={styles.otmena}
                   onClick={handleClose}
                 >
-                  Отмена
+               {lang==="EN" ? ClientlikeEn.button : ClientlikeRu.button}
                 </button>
                 <button type="submit" className={styles.otpavit}>
-                  Отправить
+             {lang==="EN" ? ClientlikeEn.buttonOp : ClientlikeRu.buttonOp}
                 </button>
               </div>
             </form>
@@ -109,11 +110,4 @@ export default function Clientlike() {
       )}
     </section>
   )
-  const ClientlikeEn={
-    title:"Successes shared by our clients",
-    btn:"Leave a review"
-}
-const ClientlikeRu={
-    title:"Успехи, которыми делятся наши клиенты",
-    btn:"Оставить отзыв"
 }

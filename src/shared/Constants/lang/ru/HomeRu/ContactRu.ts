@@ -8,4 +8,4 @@ const ContactRu={
     message:"Чем мы можем помочь?",
     btn:"Отправить"
 }
-export default ContactRu
+export default ContactRu;

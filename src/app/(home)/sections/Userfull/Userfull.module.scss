@@ -86,12 +86,13 @@ color: black;
 }
 }
 .read{
-    width: 110px;
+    width: 130px;
 height: 39px;
 padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 10px;
 gap: 10px;
+display: flex;
 cursor: pointer;
 a{
     text-decoration: none;
