@@ -2,9 +2,9 @@
 import PrimeEN from '@/shared/Constants/lang/en/HomeEn/PrimeEn'
 import styles from './Prime.module.scss'
 import PrimeRu from '@/shared/Constants/lang/ru/HomeRu/PrimeRu'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 export default function Prime() {
-   const {lang,set}=useLangStore()
+   const {lang}=useLangStore()
     return (
       <section className={styles.section}>
         <div className={styles.prime}>
