@@ -1,20 +1,25 @@
-import { Buttonfree } from '@/shared/Buttonfree/Buttonfree'
+"use client"
+import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
 import styles from './Herod.module.scss'
-import Buttonts from '@/shared/Buttonts/Buttonts'
+import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
+import useLangStore from '@/shared/Constants/useLangStore'
+import HerosEn from '@/shared/Constants/lang/en/HomeEn/HerosEn'
+import HerosRu from '@/shared/Constants/lang/ru/HomeRu/HerosRu'
+
 
 export default function Herod(){
+        const {lang,set}=useLangStore()
     return(
         <>
             <div className={styles.logo}></div>
     <div className={styles.heroInfo}>
-      <h1 className={styles.h1}>Всё, что вы хотели узнать — в 
-        <br />одном месте
-</h1>
-      <p className={styles.p}>Мы собрали ответы на самые распространённые вопросы от наших клиентов. 
-        <br />Если не нашли нужной информации — напишите нам, и мы поможем.</p>
-      <Buttonfree/>
+      <h1 className={styles.h1}>{lang==="EN" ? HerosEn.title : HerosRu.title}</h1>
+      <p className={styles.p}>{lang==="EN" ? HerosEn.text : HerosRu.text}</p>
+        <div className={styles.btn}>
+      <Btnfree/>
+      </div>
     </div>
-    <div className={styles.buttontg}><Buttonts/></div>
+    <div className={styles.buttontg}><Buttontg/></div>
     </>
     )
 }

@@ -20,7 +20,7 @@ export default function Uslugi() {
                         <div className={styles.burger}>
                             <Image src={"/assets/Frame 34092.svg"} alt='Frame' width={90} height={90} />
                         </div>
-                        <span>{lang === "EN" ? UsligiEn.bgspan : UsligiRu.bgspan}</span>
+                        <span className={styles.span}>{lang === "EN" ? UsligiEn.bgspan : UsligiRu.bgspan}</span>
                     </div>
                     <div className={styles.box1}>
                         <div className={styles.cart}>
@@ -38,7 +38,7 @@ export default function Uslugi() {
                         <div className={styles.cart}>
                             <Image src={"/assets/Frame 34092 (2).svg"} alt='Frame' width={90} height={90} />
                         </div>
-                        <span>{lang === "EN" ? UsligiEn.officespan : UsligiRu.officespan}</span>
+                        <span className={styles.span}>{lang === "EN" ? UsligiEn.officespan : UsligiRu.officespan}</span>
                     </div>
                 </div>
 
