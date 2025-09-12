@@ -2,10 +2,10 @@ import styles from './Uae.module.scss'
 import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree';
 import UaeEn from '@/shared/Constants/lang/en/footerEn/UaeEn';
 import UaeRu from '@/shared/Constants/lang/ru/FooterRu/UaeRu';
-import useLangStore from '@/shared/Constants/useLangStore';
+import useLangStore from '@/store/useLangStore';
 
 function Uae() {
-  const { lang, set } = useLangStore()
+  const { lang } = useLangStore()
   return (
     <>
       <div className={styles.UAEcontainer}>

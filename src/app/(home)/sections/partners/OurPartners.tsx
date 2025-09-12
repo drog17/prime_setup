@@ -3,7 +3,7 @@
 import Container from '@/shared/ui/Container'
 import styles from './partner.module.scss'
 import Image from 'next/image'
-import useLangStore from '@/shared/Constants/useLangStore';
+import useLangStore from '@/store/useLangStore';
 const PartnerEn={
     title:"Our partners"
 }
@@ -12,7 +12,7 @@ const PartnerRu={
 }
 
 export default function OurPartner() {
-    const{lang,set}=useLangStore()
+    const{lang}=useLangStore()
     return (
         <section className={styles.partner}>
             <Container>

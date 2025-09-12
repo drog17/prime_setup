@@ -2,11 +2,11 @@
 import Image from 'next/image'
 import styles from './Ower.module.scss'
 import Container from '@/shared/ui/Container'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 import OwerEn from '@/shared/Constants/lang/en/HomeEn/OwerEn'
 import OwerRu from '@/shared/Constants/lang/ru/HomeRu/OwerRu'
 export default function Ower() {
-    const {lang,set}=useLangStore()
+    const {lang}=useLangStore()
     return (
         <section className={styles.Ower}>
             <Container>

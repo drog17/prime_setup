@@ -5,7 +5,7 @@ interface IUseLangStore{
     set: (lang: "Ru" | "EN") =>void
 }
 
-const useLangStore = create<IUseLangStore>((set, get) => ({
+const useLangStore = create<IUseLangStore>((set) => ({
     lang: "Ru",
     set: (lang) => {
         set({lang: lang})

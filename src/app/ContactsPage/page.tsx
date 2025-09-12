@@ -1,5 +1,5 @@
 "use client"
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 import Contacts2 from '../(home)/sections/Contacts/Contacts'
 import Buttontg from '../(home)/sections/hero/buttontg/Buttontg'
 import styles from '../ContactsPage/contact/Contact.module.scss'

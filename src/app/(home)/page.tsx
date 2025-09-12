@@ -8,15 +8,12 @@ import FAQ from "./sections/faq/FAQ";
 import FreeConsultation from "./sections/free/FreeConsultation";
 import OurPartner from "./sections/partners/OurPartners";
 import Hero from '@/app/(home)/sections/hero/Hero';
-import Header from '@/widget/header/Header';
-import {useTranslations} from "next-intl";
 
 
 export default function HomePage() {
 
   return (
     <>
-      <Header />
       <Hero />
       <Whychoice />
       <Ower />

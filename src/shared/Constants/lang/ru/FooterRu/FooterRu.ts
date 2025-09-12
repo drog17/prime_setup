@@ -4,6 +4,7 @@ const FooterRu = {
     smallP: 'С понедельника по пятницу с 8:30 до 17:30 ',
     smallP2: 'Суббота 10:00 - 14:00',
     contact: 'Свяжитесь с нами',
-    palochka: ' 2025 PRIME SETUP. Все права защищены.'
+    palochka: ' 2025 PRIME SETUP. Все права защищены.',
+    sections:"Разделы"
 }
 export default FooterRu

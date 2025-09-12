@@ -10,14 +10,14 @@ import youtube from '../../../public/assets/Youtube-Icon.svg'
 import frame from '../../../public/assets/Frame 34123.svg'
 import telsvg from '../../../public/assets/Component 3.svg'
 import Uae from './uae/Uae';
-import useLangStore from '@/shared/Constants/useLangStore';
+import useLangStore from '@/store/useLangStore';
 import FooterEn from '@/shared/Constants/lang/en/footerEn/FooterEn';
 import FooterRu from '@/shared/Constants/lang/ru/FooterRu/FooterRu';
 import HeaderRu from '@/shared/Constants/lang/ru/HeaderRu/HeaderRu';
 import HeaderEn from '@/shared/Constants/lang/en/HeaderEn/HeaderEn';
 
 export default function Footer(){
-        const {lang, set} = useLangStore()
+        const {lang} = useLangStore()
     return(
         <>
             <footer className={styles.footer}>  
@@ -42,7 +42,7 @@ export default function Footer(){
                         </div>
                         <div className={styles.card2}>
                             <div className={styles.catalogs}>
-                                <p className={styles.nameS}>Sections</p>
+                                <p className={styles.nameS}>{lang==="EN" ? FooterEn.sections : FooterRu.sections}</p>
                                 <p className={styles.smallP}>{lang === "EN" ? HeaderEn.about : HeaderRu.about}</p>
                                 <p  className={styles.smallP}>{lang === "EN" ? HeaderEn.cervices : HeaderRu.cervices}</p>
                                 <p  className={styles.smallP}>{lang==="EN"? HeaderEn.blog : HeaderRu.blog}</p>

@@ -1,4 +1,4 @@
-import Header from "../sections/header/Header";
+import Header from "@/widget/header/Header";
 import Detail from "./sections/Detail";
 
 

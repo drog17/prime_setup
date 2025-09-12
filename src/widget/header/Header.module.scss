@@ -1,9 +1,9 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
-        .container {
-        width: 1440px;
-        height: 144px;
+    z-index: 2;
+
+    .content {
         display: flex;
         padding: 31px 48px;
         margin-left: 50px;
@@ -19,11 +19,13 @@
         gap: 20px;
         width: 1070px;
         height: 49px;
-
         .nodirection {
             margin-top: 17px;
             text-decoration: none;
             color: white;
+        }
+        .nodirection:hover{
+            color: #8e8d8d;
         }
 
         .li {
@@ -74,7 +76,7 @@ margin-left: 165px;
 }
         .buttonLeav {
             border-radius: 10px;
-            padding: 13px 12px;
+            width: 182px;
             height: 49px;
             background: #fff;
             border: none;
@@ -88,7 +90,7 @@ margin-left: 165px;
             position: relative;
             background-color: #134397;
             color: white;
-            border: 1px solid var(--333, white);
+            transition: 0.5s;
         }
     }
 }
