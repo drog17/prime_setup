@@ -2,7 +2,7 @@ const HeaderEn = {
     home: "Home",
     about: "About",
     contacts: "Contacts",
-    cervices: "Cervices",
+    cervices: "Services",
     faq:"FAQ",
     blog:"Blog",
     buttonleave:'Leave a request'

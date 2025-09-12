@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from './Missiya.module.scss'
 import MissiyaEn from '@/shared/Constants/lang/en/HomeEn/MissiyaEn'
 import MissiyaRu from '@/shared/Constants/lang/ru/HomeRu/MissiyaRu'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 export default function Missiya() {
      const {lang,set}=useLangStore()
     return(
