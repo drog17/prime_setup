@@ -4,7 +4,7 @@ import styles from './Heros.module.scss'
 import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
 import HerodEn from '@/shared/Constants/lang/en/HomeEn/HerodEn'
 import HerodRu from '@/shared/Constants/lang/ru/HomeRu/HerodRu'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 
 export default function Heros() {
       const {lang,set}=useLangStore()

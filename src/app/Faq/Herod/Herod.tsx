@@ -2,13 +2,13 @@
 import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
 import styles from './Herod.module.scss'
 import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 import HerosEn from '@/shared/Constants/lang/en/HomeEn/HerosEn'
 import HerosRu from '@/shared/Constants/lang/ru/HomeRu/HerosRu'
 
 
 export default function Herod(){
-        const {lang,set}=useLangStore()
+        const {lang}=useLangStore()
     return(
         <>
             <div className={styles.logo}></div>

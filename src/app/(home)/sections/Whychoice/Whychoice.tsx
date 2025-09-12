@@ -15,20 +15,12 @@ export default function Whychoice() {
                     <p>{lang === "EN" ? WhychoiceEn.subtitle : WhychoiceRu.subtitle}</p>
                 </div>
                 <div className={styles.btn}>
-<<<<<<< HEAD
                     <Link href="/about"><button>{lang === "EN" ? WhychoiceEn.btn : WhychoiceRu.btn}</button></Link>
-=======
-                    <a href="/about"><button>{lang==="EN" ? WhychoiceEn.btn :WhychoiceRu.btn}</button></a>
->>>>>>> e24245d3c52d90ba9f3afba4cdbcbd78adc3b935
                     <div className={styles.rectan}>
                         <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40} />
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
         </section >
-=======
-        </section>
->>>>>>> e24245d3c52d90ba9f3afba4cdbcbd78adc3b935
     )
 }

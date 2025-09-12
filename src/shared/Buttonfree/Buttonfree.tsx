@@ -1,5 +1,5 @@
 "use client"
-import useLangStore from '../../store/useLangStore'
+import useLangStore from '@/store/useLangStore'
 import styles from './Buttonfree.module.scss'
 
 export const Buttonfree = () => {

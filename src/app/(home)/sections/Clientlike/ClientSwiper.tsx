@@ -7,7 +7,7 @@ import Image from "next/image"
 import styles from "./Clientlike.module.scss"
 import ReviewEn from "@/shared/Constants/lang/en/HomeEn/ReviewEn"
 import ReviewRu from "@/shared/Constants/lang/ru/HomeRu/ReviewRu"
-import useLangStore from "@/shared/Constants/useLangStore"
+import useLangStore from "@/store/useLangStore"
 import { Review } from "@/shared/Constants/types"
 
 export default function ClientSwiper() {
