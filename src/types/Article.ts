@@ -4,6 +4,7 @@ export interface Article {
     description: string;
     category: string;
     image: string;
+    published?: boolean,
 }
 
 export interface IArticle extends Partial<Article> {
@@ -19,63 +20,77 @@ const articles: Article[] = [
         title: "Как Открыть Компанию В Дубае: Пошаговая Инструкция",
         description: "Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.",
         category: "Бизнес",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
     },
     {
         id: 2,
         title: "Налоговые Преимущества ОАЭ Для Бизнеса",
         description: "Нулевые налоги на прибыль и полное отсутствие НДС делают ОАЭ привлекательной юрисдикцией для международного бизнеса.",
         category: "Налоги",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
     },
     {
         id: 3,
         title: "Как Получить Визу В Дубае Для Инвесторов",
         description: "Получение резидентской визы через бизнес-иммиграцию - быстрый и надежный способ переехать в ОАЭ.",
         category: "Визы",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
     },
     {
         id: 4,
         title: "Как Получить Визу В Дубае Для Инвесторов",
         description: "Получение резидентской визы через бизнес-иммиграцию - быстрый и надежный способ переехать в ОАЭ.",
         category: "Визы",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
     },
     {
         id: 5,
         title: "Налоговые Преимущества ОАЭ Для Бизнеса",
         description: "Нулевые налоги на прибыль и полное отсутствие НДС делают ОАЭ привлекательной юрисдикцией для международного бизнеса.",
         category: "Налоги",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
+
     },
     {
         id: 6,
         title: "Как Открыть Компанию В Дубае: Пошаговая Инструкция",
         description: "Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.",
         category: "Бизнес",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
+
     },
     {
         id: 7,
         title: "Как Получить Визу В Дубае Для Инвесторов",
         description: "Получение резидентской визы через бизнес-иммиграцию - быстрый и надежный способ переехать в ОАЭ.",
         category: "Визы",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
+
     },
     {
         id: 8,
         title: "Как Открыть Компанию В Дубае: Пошаговая Инструкция",
         description: "Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.",
         category: "Бизнес",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
+
     },
     {
         id: 9,
         title: "Налоговые Преимущества ОАЭ Для Бизнеса",
         description: "Нулевые налоги на прибыль и полное отсутствие НДС делают ОАЭ привлекательной юрисдикцией для международного бизнеса.",
         category: "Налоги",
-        image: '/BlogCard.png'
+        image: '/BlogCard.png',
+        published: true,
+
     }
 ];
 export default articles

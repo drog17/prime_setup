@@ -4,10 +4,10 @@ import Buttontg from './buttontg/Buttontg';
 import Btnfree from './btnconsultating/Btnfree';
 import HeroEn from '@/shared/Constants/lang/en/HomeEn/HeroEn';
 import HeroRu from '@/shared/Constants/lang/ru/HomeRu/HeroRu';
-import useLangStore from '@/shared/Constants/useLangStore';
+import useLangStore from '@/store/useLangStore';
 
 function Hero() {
-  const { lang, set } = useLangStore()
+  const { lang} = useLangStore()
 
   return (
     <>

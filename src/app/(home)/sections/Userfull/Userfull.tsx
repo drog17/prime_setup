@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './Userfull.module.scss'
 import Link from 'next/link'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 
 
 
@@ -17,7 +17,7 @@ const UseRu={
 }
 
 export default function Userfull() {
-    const {lang,set}=useLangStore()
+    const {lang}=useLangStore()
 
     return (
         <section className={styles.section}>

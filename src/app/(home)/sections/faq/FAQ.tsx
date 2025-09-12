@@ -5,7 +5,7 @@ import Container from "@/shared/ui/Container";
 import Image from "next/image";
 import faqs from '@/types/Faq/Faq'
 import Link from "next/link";
-import useLangStore from "@/shared/Constants/useLangStore";
+import useLangStore from "@/store/useLangStore";
 const FaqsRu = {
   title: "Часто задаваемые вопросы",
   subtitle: "Ответы на самые популярные вопросы о регистрации бизнеса в ОАЭ.",
@@ -25,7 +25,7 @@ export default function FAQ() {
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-  const { lang, set } = useLangStore()
+  const { lang } = useLangStore()
 
   return (
     <section className={styles.faq}>

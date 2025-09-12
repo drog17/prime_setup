@@ -4,8 +4,11 @@ import styles from './products.module.scss';
 import Container from '@/shared/ui/Container';
 import articles, { IArticle } from '@/types/Article';
 import Product from './product/Product';
+import useLangStore from '@/store/useLangStore';
 
 export default function SearchSection() {
+      const{lang}=useLangStore()
+
     const [searchQuery, setSearchQuery] = useState('');
 
     const filteredArticles: IArticle[] = useMemo(() => {
@@ -22,14 +25,14 @@ export default function SearchSection() {
             <Container>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
-                        Что вас интересует?
+                        {lang==="EN" ? 'What are you interested in?':'Что вас интересует?'}
                     </h1>
                     <div className={styles.searchContainer}>
                         <input
                             type="text"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            placeholder="Введите чтобы начать поиск..."
+                            placeholder={lang==="EN" ? "Enter to start searching..." : "Введите чтобы начать поиск..."}
                             className={styles.searchInput}
                         />
 

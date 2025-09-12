@@ -7,7 +7,7 @@ import styles from "./free.module.scss";
 import Image from "next/image";
 import step1Img from "../../../../../public/illustration-consultation.png";
 import Container from "@/shared/ui/Container";
-import useLangStore from "@/shared/Constants/useLangStore";
+import useLangStore from "@/store/useLangStore";
 
 const steps = [
     {
@@ -39,7 +39,7 @@ const FreeEn={
 }
 
 export default function StepsSwiper() {
-    const {lang,set}=useLangStore()
+    const {lang}=useLangStore()
     return (
         <section className={styles.free}>
             <Container>

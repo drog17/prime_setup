@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation'
 
-export const router = () => {
+export const Router = () => {
   const routers = useRouter();
   return {
     goHome: () => routers.push("/"),

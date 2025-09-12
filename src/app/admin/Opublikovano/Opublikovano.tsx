@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Product from '../cards/Product/Product';
 
 export default function Opublokovano() {
-    const [searchQuery, setSearchQuery] = useState('');
+    const [searchQuery] = useState('');
     const [openMenuId, setOpenMenuId] = useState<number | null>(null);
 
     const filteredArticles: IArticle[] = useMemo(() => {

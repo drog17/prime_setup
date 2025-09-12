@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link';
 import styles from './Product.module.scss'
 import { IArticle } from '@/types/Article';
-import { useState } from 'react';
 interface IProductProps {
     product: IArticle
 }

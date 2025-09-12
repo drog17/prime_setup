@@ -1,18 +1,22 @@
+"use client"
 import Container from '@/shared/ui/Container'
 import styles from './detail.module.scss'
 import Image from 'next/image'
+import useLangStore from '@/store/useLangStore'
+import detailEn from '@/shared/Constants/lang/en/BlogEn/detailEn'
+import detailRu from '@/shared/Constants/lang/ru/BlogRu/detailRu'
 
 export default function Detail() {
-
+    const{lang}=useLangStore()
     return (
         <>
             <section className={styles.detail}>
                 <Container>
                     <div className={styles.content}>
-                        <h2 className={styles.title}>Как открыть бизнес в Дубае: пошаговое руководство</h2>
+                        <h2 className={styles.title}>{lang==="EN" ? detailEn.title : detailRu.title}</h2>
                         <div className={styles.data}>
-                            <span>Дата публикации: 20 апреля 2025</span>
-                            <p className={styles.author}>Ритиш Шарма (автор) Джейкоб Джой Мэтью (рецензент)</p>
+                            <span>{lang==="EN" ? detailEn.date : detailRu.date}</span>
+                            <p className={styles.author}>{lang==="EN" ? detailEn.author : detailRu.author}</p>
                         </div>
                         <Image
                             src={'/BlogCard.png'}

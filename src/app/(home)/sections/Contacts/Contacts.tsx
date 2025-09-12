@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import useLangStore from "@/shared/Constants/useLangStore";
+import useLangStore from "@/store/useLangStore";
 import ContactEn from "@/shared/Constants/lang/en/HomeEn/ContactEn";
 import ContactRu from "@/shared/Constants/lang/ru/HomeRu/ContactRu";
 import Image from 'next/image';
@@ -32,16 +32,16 @@ export default function Contacts() {
         alert("Message sent!");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
     };
-    const {lang,set}=useLangStore()
+    const {lang}=useLangStore()
 
     return (
         <section className={styles.contacts}>
             <Container>
                 <div className={styles.content}>
                     <div className={styles.left}>
-                        <h2 className={styles.title}>Start your journey to the <br /> UAE today</h2>
+                        <h2 className={styles.title}>{lang==="EN" ? ContactEn.title : ContactRu.title}</h2>
                         <p className={styles.text}>
-                            We are here to answer your questions and <br /> help with starting a business in the UAE.
+                            {lang==="EN" ? ContactEn.text : ContactRu.text}
                         </p>
 
                         <h3 className={styles.subtitle}>Working hours</h3>

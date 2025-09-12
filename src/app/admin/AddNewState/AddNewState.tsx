@@ -1,20 +1,18 @@
 'use client'
-
 import React, { useRef, useState } from 'react'
 import styles from './AddNewState.module.scss'
+import Image from 'next/image'
 
 interface AddNewStateProps {
   onClose: () => void
 }
-
 export default function AddNewState({ onClose }: AddNewStateProps) {
+  const [error, setError] = useState<string | null>(null);
   const [preview, setPreview] = useState<string | null>(null)
-  const [error, setError] = useState<string | null>(null)
   const [title, setTitle] = useState("")
   const [text, setText] = useState("")
   const [date, setDate] = useState("")
   const fileInputRef = useRef<HTMLInputElement | null>(null)
-
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (!file) {
@@ -22,13 +20,11 @@ export default function AddNewState({ onClose }: AddNewStateProps) {
       setError(null)
       return
     }
-
     if (file.size > 2 * 1024 * 1024) {
       setError('Обложка статьи должна быть не больше 2 MB')
       setPreview(null)
       return
     }
-
     setError(null)
     const reader = new FileReader()
     reader.onload = () => setPreview(reader.result as string)
@@ -40,16 +36,16 @@ export default function AddNewState({ onClose }: AddNewStateProps) {
   }
 
   const handleSubmit = (e: React.FormEvent) => {
+    setError(null);
     e.preventDefault()
-
-    if (!title.trim()  || !text.trim() ||  !date.trim() || !preview) {
+    if (!title.trim() || !text.trim() || !date.trim() || !preview) {
       setError("⚠️ Заполните все поля перед публикацией")
       return
     }
-
     setError(null)
     alert("✅ Статья успешно опубликована!")
-    onClose() 
+    onClose()
+
   }
 
   return (
@@ -82,10 +78,10 @@ export default function AddNewState({ onClose }: AddNewStateProps) {
               />
 
               {preview ? (
-                <img src={preview} alt="Превью обложки" className={styles.previewImage} />
+                <Image src={preview} alt="Превью обложки" className={styles.previewImage} width={300} height={300}/>
               ) : (
                 <div className={styles.placeholder}>
-                  <img src="/icons/image.svg" alt="иконка загрузки" />
+                  <Image src="/icons/image.svg" alt="иконка загрузки"/>
                   <button type="button">Загрузите изображение для статьи</button>
                   <p>Обложка статьи должна быть не больше 2 MB</p>
                 </div>
@@ -122,16 +118,15 @@ export default function AddNewState({ onClose }: AddNewStateProps) {
             <button
               type="button"
               className={styles.otmena}
-              onClick={onClose}
-            >
+              onClick={onClose}>
               Отмена
             </button>
-            <button type="submit" className={styles.sohranit}>
+            <button type="submit" className={styles.sohranit} >
               Опубликовать
             </button>
           </div>
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }

@@ -1,7 +1,6 @@
 
 import Footer from "@/widget/footer/Footer";
-import { TbBackground } from "react-icons/tb";
-import Header from "./sections/header/Header";
+import Header from "@/widget/header/Header";
 
 export default function HomeLayout({
   children,
@@ -10,6 +9,7 @@ export default function HomeLayout({
 }) {
   return (
     <>
+      <Header />
       <main>
         {children}
       </main>

@@ -1,10 +1,10 @@
 "use client"
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 import styles from './Btnfree.module.scss'
 import Link from 'next/link'
 
 function Btnfree() {
-    const { lang, set } = useLangStore()
+    const { lang } = useLangStore()
   return (
     <div>
 
