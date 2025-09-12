@@ -2,26 +2,23 @@
 import styles from './Buttontg.module.scss'
 import tgpng from '../../../../../../public/assets/Telegram.png'
 import Image from 'next/image';
+import ButtonTgEn from '@/shared/Constants/lang/en/HomeEn/ButtonTgEn';
+import ButtonTgRu from '@/shared/Constants/lang/ru/HomeRu/ButtonTgRu';
 import useLangStore from '@/shared/Constants/useLangStore';
 function Buttontg() {
-  const {lang, set} = useLangStore()
+  const {lang,set}=useLangStore()
   return (
     <>
         <button className={styles.button}>
           <a href="https://t.me/idench">
+          <div className={styles.teleg}>
           <Image src={tgpng}  alt='' className={styles.tgpng}/> 
+          </div>
           </a>
-          <p className={styles.p}>{lang==="EN" ? ButtontgEn.p : ButtontgRu.p}</p>
+          <p className={styles.p}>{lang==="EN" ? ButtonTgEn.title : ButtonTgRu.title}</p>
       </button>
     </>
   )
 }
-const ButtontgEn={
-  p:'Need help?Contact us by chat'
-}
-const ButtontgRu={
-  p:'Нужна помощь? Свяжитесь с нами по чату'
-}
-
 
 export default Buttontg

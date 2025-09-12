@@ -1,8 +1,7 @@
 import Container from '@/shared/ui/Container'
 import styles from './hero.module.scss'
-import Buttonts from '@/shared/Buttonts/Buttonts'
-import { Buttonfree } from '@/shared/Buttonfree/Buttonfree'
 import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
+import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
 
 
 export default function Hero(){
@@ -15,9 +14,11 @@ export default function Hero(){
         Мы делимся полезной информацией, основанной на реальном опыте работы с 
         <br />предпринимателями. Узнайте о тонкостях регистрации компаний, налогах, 
         <br />визах и многом другом.</p>
-      <Buttonfree/>
+        <div className={styles.btn}>
+      <Btnfree/>
+        </div>
     </div>
-    <div className={styles.buttontg}><Buttonts/></div>
+    <div className={styles.buttontg}><Buttontg/></div>
         </>
     )
 }

@@ -9,9 +9,7 @@ h2{
     justify-content: center;
     font-family: Gilroy-Bold;
 font-weight: 400;
-font-style: ☞;
 font-size: 46px;
-leading-trim: NONE;
 line-height: 48px;
 letter-spacing: 0%;
 text-align: center;
@@ -292,11 +290,11 @@ color: white;
 }
 }
 }
-/* --- кастомные стили для пагинации Swiper --- */
+
 :global(.swiper-pagination) {
     margin-bottom: -10px;
   text-align: center;
-  position: relative; /* чтобы не перекрывал содержимое */
+  position: relative; 
 }
 
 :global(.swiper-pagination-bullet) {

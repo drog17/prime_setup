@@ -56,7 +56,12 @@ height: 635.0689697265625px;
 border-radius: 30px;
 padding: 25px;
 border: 3px solid #134397;
-background: #FFFFFF;
+      cursor: pointer;
+      background: white;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: color 0.3s ease;
 .div{
     width: 360px;
 height: 294.0689392089844px;
@@ -86,12 +91,13 @@ color: black;
 }
 }
 .read{
-    width: 110px;
+    width: 130px;
 height: 39px;
 padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 10px;
 gap: 10px;
+display: flex;
 cursor: pointer;
 a{
     text-decoration: none;
@@ -106,6 +112,30 @@ line-height: 100%;
 letter-spacing: 0%;
 color: #D23216;
 }
+}
+}
+.box::before{
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, #124397, #134397);
+      transform: scaleX(0);
+      transform-origin: top ;
+      transition: transform 0.4s ease-out;
+      z-index: -1;
+      border-radius: 6px;
+}
+.box:hover::before{
+      transform: scaleX(1) scaleY(1);
+}
+.box:hover{
+.text{
+    h2{
+        color: white;
+    }
+    p{
+        color: white;
+    }
 }
 }
 }

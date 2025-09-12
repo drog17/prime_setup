@@ -3,18 +3,21 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./Poisk.module.scss";
 import Biznes from "../Biznes/Biznes"; 
+import PoiskEn from "@/shared/Constants/lang/en/HomeEn/PoiskEn";
+import PoiskRu from "@/shared/Constants/lang/ru/HomeRu/PoiskRu";
+import useLangStore from "@/shared/Constants/useLangStore";
 
 export default function Poisk() {
   const [query, setQuery] = useState("");
-
+  const {lang,set}=useLangStore()
   return (
     <section className={styles.section}>
       <div className={styles.contend}>
-        <h1>Ищете конкретный вопрос?</h1>
+        <h2>{lang==="EN" ? PoiskEn.title : PoiskRu.title}</h2>
         <form onSubmit={(e) => e.preventDefault()}>
           <input
             type="search"
-            placeholder="Введите чтобы начать поиск..."
+            placeholder={lang==="EN" ? PoiskEn.search : PoiskRu.search}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             required
@@ -25,7 +28,7 @@ export default function Poisk() {
             width={30}
             height={30}
           />
-          <button>Поиск</button>
+          <button>{lang==="EN" ? PoiskEn.button : PoiskRu.button}</button>
         </form>
       </div>
       <Biznes searchQuery={query} />
