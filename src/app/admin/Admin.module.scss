@@ -1,0 +1,66 @@
+.welcomeWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 32px;
+    animation: fadein 0.6 ease-in-out;
+}
+@keyframes fadein {
+    from {opacity: 0; transform: translateY(20px);}
+    to{ opacity: 1; transform: translateY(0);}
+}
+.authWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.authBox {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 300px;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 8px;
+    background: #0070f3;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background: #0059c1;
+    }
+  }
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+.adminPanel {
+  padding: 40px;
+}

@@ -1,0 +1,28 @@
+.startSectionContainer{
+    width: 1440px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    position: relative;
+    .smallCont{
+        position: absolute;
+        width: 509px;
+        height: 201px;
+        margin-left: 800px;
+        .bigSpan{
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 123%;
+            color: #fff;
+        }
+        .smallSpan{
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 123%;
+            color: #fff;
+        }
+    }
+}

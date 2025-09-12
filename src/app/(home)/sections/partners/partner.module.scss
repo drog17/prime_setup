@@ -1,0 +1,36 @@
+.partner {
+    background: url('/partnerbg.png')center/cover no-repeat;
+    height: 593px;
+    width: 100%;
+    position: relative;
+
+    .content {
+        text-align: center;
+
+        .title {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 120%;
+            text-align: center;
+            color: var(--zagol);
+            margin-top: 250px;
+        }
+        .partners{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 250px;
+        }
+    }
+}
+
+.partner::after {
+    content: '';
+    background: url('/path.png')center/cover no-repeat;
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+}

@@ -1,0 +1,134 @@
+.spectrContainer{
+    width: 1440px;
+    height: 1000px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .spectr{
+        width: 1337px;
+        height: 930px;
+        .h2{
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 109%;
+            text-align: center;
+            color: var(--zagol);
+            width: 795px;
+            height: 100px;
+            color:  #0A2463;
+            margin-left: 300px;
+            margin-bottom: 70px;
+        }
+        .infoCatalog{
+            width: 1337px;
+            height: 760px;
+            .wrapper {
+            display: flex;
+            height: 760px;
+            }
+        .sidebar {
+            position: relative;
+            width: 601px;
+            height: 760px;
+        }
+        .sidebar::before {
+            border-radius: 30px;
+            width: 12px;
+            height: 760px;
+            content: "";
+            position: absolute;
+            left: 0;
+            background:  #c8c8c8;;
+        }
+        .item {
+            margin-left: 50px;
+            margin-bottom: 50px;
+            padding: 10px;
+            width: 539px;
+            height: 50px;
+            cursor: pointer;
+            transition:  0.3s ease;
+            position: relative;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 100%;
+            color: #134497;
+}
+        .active {
+           color: #D23216;
+        }
+        .indicator {
+           position: absolute;
+           left: 0;
+           border-radius: 20px;
+           width: 12px;
+           height: 34px;
+           background: #0051de;
+           transition: top 0.3s ease;
+        }
+        .content {
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: inherit;
+             .pContent{
+                font-family: var(--third-family);
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 125%;
+                text-align: center;
+                color: #000;
+                margin-top: 50px;
+             }
+             .h2Title{
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 100%;
+                text-align: center;
+               color: #134397;
+               display: flex;
+               margin-top: 100px;
+               .number{
+                margin-left: 5px;
+                font-size: 80px;
+               color: #D23216;
+               }
+             }
+            .polygon6{
+                position: absolute;
+                margin-top: -428px;
+                margin-right: 120px;
+            }
+            .polygon4{
+                position: absolute;
+                border-radius: 50px; 
+                margin-top: 370px;
+                margin-right: 370px;
+            }
+            .polygon5{
+                position: absolute;
+                margin-top: -258px;
+                margin-left: 353px;
+                border-radius: 50px;
+            }
+        }
+        .card {
+         border-radius: 50px;
+         padding: 50px;
+         height: 532px;
+         width: 666px;
+         background: #fff;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+         animation: fadeIn 0.3s ease;
+        }
+        }
+    }
+}

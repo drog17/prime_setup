@@ -1,0 +1,61 @@
+"use client"
+import Container from '@/shared/ui/Container'
+import styles from './detail.module.scss'
+import Image from 'next/image'
+import useLangStore from '@/store/useLangStore'
+import detailEn from '@/shared/Constants/lang/en/BlogEn/detailEn'
+import detailRu from '@/shared/Constants/lang/ru/BlogRu/detailRu'
+
+export default function Detail() {
+    const{lang}=useLangStore()
+    return (
+        <>
+            <section className={styles.detail}>
+                <Container>
+                    <div className={styles.content}>
+                        <h2 className={styles.title}>{lang==="EN" ? detailEn.title : detailRu.title}</h2>
+                        <div className={styles.data}>
+                            <span>{lang==="EN" ? detailEn.date : detailRu.date}</span>
+                            <p className={styles.author}>{lang==="EN" ? detailEn.author : detailRu.author}</p>
+                        </div>
+                        <Image
+                            src={'/BlogCard.png'}
+                            alt=''
+                            width="1283" height="742"
+                        />
+                        <p>Дубай — один из самых привлекательных городов для ведения бизнеса благодаря гибкой <br /> экономике, низким налогам и благоприятной юридической системе. В этой статье мы <br /> расскажем, как пошагово открыть бизнес в Дубае, на что обратить внимание и чего избегать.</p>
+                        <span className={styles.step}>Шаг 1: Определитесь с типом юрисдикции</span>
+                        <p> В ОАЭ существует три основные формы регистрации: <br />
+                            Free Zone (Свободные экономические зоны) — выгодны для иностранных предпринимателей, <br /> позволяют 100% владение бизнесом. <br />
+                            Mainland (наземная юрисдикция) — подходит, если вы хотите работать напрямую с местными <br /> компаниями и государственными структурами. <br />
+                            Offshore — для международных операций и налогового планирования, но не подходит для <br /> работы внутри ОАЭ.</p>
+                        <span className={styles.step}>Шаг 2: Выберите вид деятельности</span>
+                        <p>Каждому бизнесу необходима лицензия, которая зависит от сферы деятельности: <br />
+                            Торговая <br />
+                            Профессиональная <br />
+                            Промышленная<br />
+                            Медиа, IT, финансы и др.<br />
+                            Важно правильно указать сферу, иначе возможны отказы или ограничения.
+                        </p>
+                        <span className={styles.step}>Шаг 3: Выбор свободной зоны или регистрационного органа</span>
+                        <p>Если вы выбрали Free Zone, то нужно определить, какая зона вам подходит.Например:<br />
+                            DMCC — торговля, драгоценные металлы, криптовалюта  <br />
+                            IFZA — низкие затраты на регистрацию <br />
+                            DIFC — финансы, банки, инвестиции</p>
+                        <span className={styles.step}>Шаг 4: Подготовьте документы</span>
+                        <p>Стандартный набор: <br />
+                            Копия паспорта <br />
+                            Резюме (в некоторых зонах) <br />
+                            Название компании <br />
+                            План деятельности <br />
+                            Аренда офиса (виртуального или физического)</p>
+                        <span className={styles.step}>Шаг 5: Подача заявки и получение лицензии</span>
+                        <p>Вы подаёте документы онлайн или через зарегистрированного агента. Сроки: от 3 до 15 <br /> рабочих дней. После этого вы получаете лицензию и можете начать работу.</p>
+                        <span className={styles.step}>Дополнительно: открытие счёта и визы</span>
+                        <p>После регистрации можно открыть корпоративный банковский счёт и оформить <br /> инвесторскую визу, а также визу для сотрудников, если планируете нанимать персонал.</p>
+                    </div>
+                </Container>
+            </section>
+        </>
+    )
+}
