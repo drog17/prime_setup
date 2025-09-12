@@ -2,9 +2,10 @@
 import PredprimialEn from '@/shared/Constants/lang/en/HomeEn/PredprimialEn'
 import styles from './Predprimial.module.scss'
 import PredprimialRu from '@/shared/Constants/lang/ru/HomeRu/PredprimialRu'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
+
 export default function Predprimial() {
-     const {lang,set}=useLangStore()
+     const {lang}=useLangStore()
     return(
         <section className={styles.section}>
             <div className={styles.content}>

@@ -5,7 +5,7 @@ import MissiyaEn from '@/shared/Constants/lang/en/HomeEn/MissiyaEn'
 import MissiyaRu from '@/shared/Constants/lang/ru/HomeRu/MissiyaRu'
 import useLangStore from '@/store/useLangStore'
 export default function Missiya() {
-     const {lang,set}=useLangStore()
+     const {lang}=useLangStore()
     return(
         <section className={styles.section}>
 <div className={styles.content}>

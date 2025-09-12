@@ -5,11 +5,11 @@ import styles from "./Poisk.module.scss";
 import Biznes from "../Biznes/Biznes"; 
 import PoiskEn from "@/shared/Constants/lang/en/HomeEn/PoiskEn";
 import PoiskRu from "@/shared/Constants/lang/ru/HomeRu/PoiskRu";
-import useLangStore from "@/shared/Constants/useLangStore";
+import useLangStore from "@/store/useLangStore";
 
 export default function Poisk() {
   const [query, setQuery] = useState("");
-  const {lang,set}=useLangStore()
+  const {lang}=useLangStore()
   return (
     <section className={styles.section}>
       <div className={styles.contend}>

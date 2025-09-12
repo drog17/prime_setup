@@ -4,7 +4,7 @@ import styles from './Prime.module.scss'
 import PrimeRu from '@/shared/Constants/lang/ru/HomeRu/PrimeRu'
 import useLangStore from '@/store/useLangStore'
 export default function Prime() {
-   const {lang,set}=useLangStore()
+   const {lang}=useLangStore()
     return (
       <section className={styles.section}>
         <div className={styles.prime}>
