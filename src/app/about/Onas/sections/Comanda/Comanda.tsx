@@ -3,9 +3,9 @@ import Image from 'next/image'
 import styles from './Comanda.module.scss'
 import ComandaEn from '@/shared/Constants/lang/en/HomeEn/ComandaEn'
 import ComandaRu from '@/shared/Constants/lang/ru/HomeRu/ComandaRu'
-import useLangStore from '@/shared/Constants/useLangStore'
+import useLangStore from '@/store/useLangStore'
 export default function Commanda() {
-      const {lang,set}=useLangStore()
+      const {lang}=useLangStore()
     return(
         <section className={styles.section}>
 <div className={styles.contend}>
