@@ -5,9 +5,12 @@ import useLangStore from '@/store/useLangStore'
 import HeroEn from '@/shared/Constants/lang/en/BlogEn/HeroEn'
 import HeroRu from '@/shared/Constants/lang/ru/BlogRu/HeroRu'
 import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
+<<<<<<< HEAD
+=======
+import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
+>>>>>>> c960e7e7230d276a5cb7835f343da21e9a3e663f
 
-
-export default function Hero() {
+export default function Hero(){
   const{lang}=useLangStore()
   return (
     <>
@@ -20,4 +23,8 @@ export default function Hero() {
       <div className={styles.buttontg}><Buttontg /></div>
     </>
   )
+<<<<<<< HEAD
+=======
+
+>>>>>>> c960e7e7230d276a5cb7835f343da21e9a3e663f
 }
