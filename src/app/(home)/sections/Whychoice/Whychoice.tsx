@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import styles from './Whychoice.module.scss'
-import Link from 'next/link'
 import useLangStore from '@/store/useLangStore'
 import WhychoiceEn from '@/shared/Constants/lang/en/HomeEn/WhychiceEn'
 import WhychoiceRu from '@/shared/Constants/lang/ru/HomeRu/WhychoiceRu'

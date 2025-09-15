@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styles from './Addstate.module.scss'
 import AddNewState from '../AddNewState/AddNewState'
-import Opublokovano from '../Opublikovano/Opublikovano'
+import Published from '../Published/Published'
 export default function Addstate() {
   const [open, setOpen] = useState(false)
 const [openPubl, setOpenPubl] = useState(false)
@@ -27,7 +27,7 @@ const [openPubl, setOpenPubl] = useState(false)
 
 
       {open && <AddNewState onClose={() => setOpen(false)} />}
-      {openPubl && <Opublokovano/>}
+              {openPubl && <Published/>}
     </div>
   )
 }

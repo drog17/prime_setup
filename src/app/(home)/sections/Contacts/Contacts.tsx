@@ -2,7 +2,6 @@
 import { useState } from "react";
 import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
 import Image from 'next/image';
 import facebook from '../../../../../public/assets/Facebook-Icon (1).svg'
 import twitter from '../../../../../public/assets/Twitter-Icon (1).svg'
