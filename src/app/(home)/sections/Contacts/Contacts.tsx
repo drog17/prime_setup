@@ -2,10 +2,6 @@
 import { useState } from "react";
 import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
-import ContactEn from "@/shared/Constants/lang/en/HomeEn/ContactEn";
-import ContactRu from "@/shared/Constants/lang/ru/HomeRu/ContactRu";
-import useLangStore from "@/store/useLangStore";
 import Image from 'next/image';
 import facebook from '../../../../../public/assets/Facebook-Icon (1).svg'
 import twitter from '../../../../../public/assets/Twitter-Icon (1).svg'
@@ -14,6 +10,7 @@ import  linkedin from '../../../../../public/assets/LinkedIn-Icon (1).svg'
 import youtube from '../../../../../public/assets/Youtube-Icon (1).svg'
 import ContactsEn from "@/shared/Constants/lang/en/HomeEn/ContactsEn";
 import ContactsRu from "@/shared/Constants/lang/ru/HomeRu/ContactsRu";
+import useLangStore from "@/store/useLangStore";
 
 export default function Contacts() {
     const [formData, setFormData] = useState({
@@ -41,7 +38,6 @@ export default function Contacts() {
             <Container>
                 <div className={styles.content}>
                     <div className={styles.left}>
-
                         <h2 className={styles.title}>{t.title}</h2>
                         <p className={styles.text}>{t.text}</p>
 

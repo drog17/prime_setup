@@ -9,7 +9,7 @@ import useLangStore from "@/store/useLangStore";
 
 export default function Poisk() {
   const [query, setQuery] = useState("");
-  const {lang,set}=useLangStore()
+  const {lang}=useLangStore()
   return (
     <section className={styles.section}>
       <div className={styles.contend}>

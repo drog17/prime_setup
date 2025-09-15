@@ -7,11 +7,11 @@ import Image from "next/image"
 import styles from "./Clientlike.module.scss"
 import ReviewEn from "@/shared/Constants/lang/en/HomeEn/ReviewEn"
 import ReviewRu from "@/shared/Constants/lang/ru/HomeRu/ReviewRu"
-import useLangStore from "@/store/useLangStore"
 import { Review } from "@/shared/Constants/types"
+import useLangStore from "@/store/useLangStore"
 
 export default function ClientSwiper() {
-  const {lang, set} = useLangStore();
+  const {lang} = useLangStore();
   const reviews: Review[] = lang === "EN" ? ReviewEn: ReviewRu;
 
   return (

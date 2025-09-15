@@ -6,8 +6,7 @@ import useLangStore from '@/store/useLangStore'
 import HeroEn from '@/shared/Constants/lang/en/BlogEn/HeroEn'
 import HeroRu from '@/shared/Constants/lang/ru/BlogRu/HeroRu'
 
-
-export default function Hero() {
+export default function Hero(){
   const{lang}=useLangStore()
   return (
     <>

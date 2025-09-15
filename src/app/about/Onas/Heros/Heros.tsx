@@ -7,7 +7,7 @@ import HerodRu from '@/shared/Constants/lang/ru/HomeRu/HerodRu'
 import useLangStore from '@/store/useLangStore'
 
 export default function Heros() {
-      const {lang,set}=useLangStore()
+      const {lang}=useLangStore()
       return (
             <>
                   <div className={styles.logo}></div>

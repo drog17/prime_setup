@@ -29,6 +29,7 @@ export default function Commanda() {
         <Image src={"/assets/Group 16 (1).png"} alt='iamge' width={420} height={603}/>
     </div>
 </div>
+
         </section>
     )
 }

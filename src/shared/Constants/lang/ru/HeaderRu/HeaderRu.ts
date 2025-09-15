@@ -2,7 +2,7 @@ const HeaderRu = {
     home: "Главная",
     about: "О нас",
     contacts: "Контакты",
-    cervices: "Ceрвисы",
+    services: "Ceрвисы",
     faq:"FAQ",
     blog:"Блог",
     buttonleave:"Оставить заявку"

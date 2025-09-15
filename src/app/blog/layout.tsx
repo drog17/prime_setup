@@ -1,4 +1,3 @@
-
 import Footer from "@/widget/footer/Footer";
 import Header from "@/widget/header/Header";
 
