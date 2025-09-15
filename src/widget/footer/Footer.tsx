@@ -44,7 +44,7 @@ export default function Footer(){
                             <div className={styles.catalogs}>
                                 <p className={styles.nameS}>{lang==="EN" ? FooterEn.sections : FooterRu.sections}</p>
                                 <p className={styles.smallP}>{lang === "EN" ? HeaderEn.about : HeaderRu.about}</p>
-                                <p  className={styles.smallP}>{lang === "EN" ? HeaderEn.cervices : HeaderRu.cervices}</p>
+                                <p  className={styles.smallP}>{lang === "EN" ? HeaderEn.services : HeaderRu.services}</p>
                                 <p  className={styles.smallP}>{lang==="EN"? HeaderEn.blog : HeaderRu.blog}</p>
                                 <p  className={styles.smallP}>FAQ</p>
                                 <p  className={styles.smallP}>{lang==="EN"? HeaderEn.contacts : HeaderRu.contacts}</p>
