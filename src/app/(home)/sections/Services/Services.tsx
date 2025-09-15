@@ -1,12 +1,12 @@
 "use client"
 import Image from 'next/image'
-import styles from './Uslugi.module.scss'
+import styles from './Services.module.scss'
 import useLangStore from '@/store/useLangStore'
 import UsligiEn from '@/shared/Constants/lang/en/HomeEn/UslugiEn'
 import UsligiRu from '@/shared/Constants/lang/ru/HomeRu/UslugiRu'
 import Container from '@/shared/ui/Container'
 
-export default function Uslugi() {
+export default function Services() {
     const { lang } = useLangStore()
     return (
         <section className={styles.uslugi}>

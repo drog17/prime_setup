@@ -81,7 +81,7 @@ export default function AddNewState({ onClose }: AddNewStateProps) {
                 <Image src={preview} alt="Превью обложки" className={styles.previewImage} width={300} height={300}/>
               ) : (
                 <div className={styles.placeholder}>
-                  <Image src="/icons/image.svg" alt="иконка загрузки"/>
+                  <Image src="./icons/image.svg" alt="иконка загрузки" width={100} height={100}/>
                   <button type="button">Загрузите изображение для статьи</button>
                   <p>Обложка статьи должна быть не больше 2 MB</p>
                 </div>

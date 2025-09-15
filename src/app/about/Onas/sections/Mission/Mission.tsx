@@ -1,10 +1,10 @@
 "use client"
 import Image from 'next/image'
-import styles from './Missiya.module.scss'
+import styles from './Mission.module.scss'
 import MissiyaEn from '@/shared/Constants/lang/en/HomeEn/MissiyaEn'
 import MissiyaRu from '@/shared/Constants/lang/ru/HomeRu/MissiyaRu'
 import useLangStore from '@/store/useLangStore'
-export default function Missiya() {
+export default function Mission() {
      const {lang}=useLangStore()
     return(
         <section className={styles.section}>
