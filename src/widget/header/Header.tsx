@@ -8,6 +8,7 @@ import HeaderEn from '@/shared/Constants/lang/en/HeaderEn/HeaderEn';
 import useLangStore from '@/store/useLangStore';
 import HeaderRu from '@/shared/Constants/lang/ru/HeaderRu/HeaderRu';
 import Container from '@/shared/ui/Container';
+import { useState } from 'react';
 
 export default function Header() {
     const { lang, set } = useLangStore()
