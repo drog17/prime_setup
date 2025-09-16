@@ -1,6 +1,6 @@
 const HeaderEn = {
     home: "Home",
-    about: "About",
+    about: "About Us",
     contacts: "Contacts",
     services: "Services",
     faq:"FAQ",

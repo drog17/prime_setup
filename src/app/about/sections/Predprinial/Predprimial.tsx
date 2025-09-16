@@ -1,7 +1,7 @@
 "use client"
-import PredprimialEn from '@/shared/Constants/lang/en/HomeEn/PredprimialEn'
+import PredprimialEn from '@/shared/Constants/lang/en/AboutEn/PredprimialEn'
 import styles from './Predprimial.module.scss'
-import PredprimialRu from '@/shared/Constants/lang/ru/HomeRu/PredprimialRu'
+import PredprimialRu from '@/shared/Constants/lang/ru/AboutRu/PredprimialRu'
 import useLangStore from '@/store/useLangStore'
 
 export default function Predprimial() {

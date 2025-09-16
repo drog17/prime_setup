@@ -1,12 +1,12 @@
 "use client"
 import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
-import styles from './Heros.module.scss'
+import styles from './Hero.module.scss'
 import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
-import HerodEn from '@/shared/Constants/lang/en/HomeEn/HerodEn'
-import HerodRu from '@/shared/Constants/lang/ru/HomeRu/HerodRu'
 import useLangStore from '@/store/useLangStore'
+import HerodEn from '@/shared/Constants/lang/en/AboutEn/HeroEn'
+import HerodRu from '@/shared/Constants/lang/ru/AboutRu/HeroRu'
 
-export default function Heros() {
+export default function Hero() {
       const {lang}=useLangStore()
       return (
             <>
