@@ -1,9 +1,9 @@
 "use client"
 import styles from './hero.module.scss'
+import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
 import useLangStore from '@/store/useLangStore'
 import HeroEn from '@/shared/Constants/lang/en/BlogEn/HeroEn'
 import HeroRu from '@/shared/Constants/lang/ru/BlogRu/HeroRu'
-import Buttontg from '@/app/(home)/sections/hero/buttontg/Buttontg'
 import Btnfree from '@/app/(home)/sections/hero/btnconsultating/Btnfree'
 
 export default function Hero(){
@@ -22,5 +22,4 @@ export default function Hero(){
       </div>
     </>
   )
-
 }

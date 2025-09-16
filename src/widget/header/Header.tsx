@@ -1,5 +1,4 @@
 "use client"
-import { useState } from 'react'
 import styles from './Header.module.scss'
 import frame3 from '../../../public/assets/Frame 3 (1).svg'
 import Image from 'next/image';
