@@ -1,17 +1,17 @@
 "use client";
 import BiznesEn from "@/shared/Constants/lang/en/HomeEn/BiznesEn";
 import BiznesRu from "@/shared/Constants/lang/ru/HomeRu/BiznesRu";
-import styles from "./Biznes.module.scss";
+import styles from "./Business.module.scss";
 import { Question } from "@/shared/Constants/types";
-import BiznesDataEn from "@/shared/Constants/lang/en/HomeEn/BiznesDataEn";
-import BiznesDataRu from "@/shared/Constants/lang/ru/HomeRu/BiznesDataRu";
+import BiznesDataEn from "@/shared/Constants/lang/en/FaqEn/BiznesDataEn";
+import BiznesDataRu from "@/shared/Constants/lang/ru/FaqRu/BiznesDataRu";
 import useLangStore from "@/store/useLangStore";
 
 interface BiznesProps {
   searchQuery: string;
 }
 
-export default function Biznes({ searchQuery }: BiznesProps) {
+export default function Business({ searchQuery }: BiznesProps) {
   const { lang} = useLangStore();
   const data: Question[] = lang === "EN" ? BiznesDataEn : BiznesDataRu;
   const filtered = data.filter((item) => {

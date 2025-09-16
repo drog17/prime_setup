@@ -1,12 +1,12 @@
 "use client"
 import { useState, useMemo } from 'react';
-import styles from './Opublikovano.module.scss';
+import styles from './Published.module.scss';
 import Container from '@/shared/ui/Container';
 import articles, { IArticle } from '@/types/Article';
 import Image from 'next/image';
 import Product from '../cards/Product/Product';
 
-export default function Opublokovano() {
+export default function Published() {
     const [searchQuery] = useState('');
     const [openMenuId, setOpenMenuId] = useState<number | null>(null);
 

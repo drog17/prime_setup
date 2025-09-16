@@ -1,7 +1,7 @@
 "use client"
-import PrimeEN from '@/shared/Constants/lang/en/HomeEn/PrimeEn'
+import PrimeEN from '@/shared/Constants/lang/en/AboutEn/PrimeEn'
 import styles from './Prime.module.scss'
-import PrimeRu from '@/shared/Constants/lang/ru/HomeRu/PrimeRu'
+import PrimeRu from '@/shared/Constants/lang/ru/AboutRu/PrimeRu'
 import useLangStore from '@/store/useLangStore'
 export default function Prime() {
    const {lang}=useLangStore()

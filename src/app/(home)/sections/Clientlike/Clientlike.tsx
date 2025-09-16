@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import styles from "./Clientlike.module.scss"
-import ClientSwiper from "./ClientSwiper"
+import ClientSwiper from "./Swiper/ClientSwiper"
 import ClientlikeRu from "@/shared/Constants/lang/ru/HomeRu/ClientlikeRu"
 import ClientlikeEn from "@/shared/Constants/lang/en/HomeEn/ClientlikeEn"
 import useLangStore from "@/store/useLangStore"

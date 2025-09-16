@@ -1,13 +1,13 @@
 import Clientlike from "./sections/Clientlike/Clientlike";
 import Ower from "./sections/Ower/Ower";
 import Userfull from "./sections/Userfull/Userfull";
-import Uslugi from "./sections/Uslugi/Uslugi";
 import Whychoice from "./sections/Whychoice/Whychoice";
 import Contacts from "./sections/Contacts/Contacts";
 import FAQ from "./sections/faq/FAQ";
 import FreeConsultation from "./sections/free/FreeConsultation";
 import OurPartner from "./sections/partners/OurPartners";
 import Hero from '@/app/(home)/sections/hero/Hero';
+import Services from "./sections/Services/Services";
 
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
       <Hero />
       <Whychoice />
       <Ower />
-      <Uslugi />
+      <Services/>
       <FreeConsultation />
       <OurPartner />
       <Clientlike />

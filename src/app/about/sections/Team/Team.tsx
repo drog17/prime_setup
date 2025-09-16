@@ -1,10 +1,10 @@
 "use client"
 import Image from 'next/image'
-import styles from './Comanda.module.scss'
+import styles from './Team.module.scss'
 import ComandaEn from '@/shared/Constants/lang/en/HomeEn/ComandaEn'
 import ComandaRu from '@/shared/Constants/lang/ru/HomeRu/ComandaRu'
 import useLangStore from '@/store/useLangStore'
-export default function Commanda() {
+export default function Team() {
       const {lang}=useLangStore()
     return(
         <section className={styles.section}>

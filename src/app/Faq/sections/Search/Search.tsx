@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import styles from "./Poisk.module.scss";
-import Biznes from "../Biznes/Biznes"; 
-import PoiskEn from "@/shared/Constants/lang/en/HomeEn/PoiskEn";
-import PoiskRu from "@/shared/Constants/lang/ru/HomeRu/PoiskRu";
+import styles from "./Search.module.scss";
+import PoiskEn from "@/shared/Constants/lang/en/FaqEn/PoiskEn";
+import PoiskRu from "@/shared/Constants/lang/ru/FaqRu/PoiskRu";
 import useLangStore from "@/store/useLangStore";
+import Business from "../Business/Business";
 
-export default function Poisk() {
+export default function Search() {
   const [query, setQuery] = useState("");
   const {lang}=useLangStore()
   return (
@@ -31,7 +31,7 @@ export default function Poisk() {
           <button>{lang==="EN" ? PoiskEn.button : PoiskRu.button}</button>
         </form>
       </div>
-      <Biznes searchQuery={query} />
+      <Business searchQuery={query} />
     </section>
   );
 

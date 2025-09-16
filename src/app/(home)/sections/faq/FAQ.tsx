@@ -10,11 +10,13 @@ const FaqsRu = {
   title: "Часто задаваемые вопросы",
   subtitle: "Ответы на самые популярные вопросы о регистрации бизнеса в ОАЭ.",
   question: 'Почему я должен начать бизнес в Дубае?',
-  answer: "Коммерческие, профессиональные и промышленные лицензии — это основные категории."
+  answer: "Коммерческие, профессиональные и промышленные лицензии — это основные категории.",
+  button: "Читать все ответы"
 }
 const FaqsEn = {
   title: "Frequently Asked Questions",
-  subtitle: "Discover clear, concise answers to the most common questions about starting and registering a business in the UAE."
+  subtitle: "Discover clear, concise answers to the most common questions about starting and registering a business in the UAE.",
+  button: "Read all answers"
 }
 
 
@@ -57,7 +59,7 @@ export default function FAQ() {
             ))}
           </div>
           <div className={styles.readMore}>
-           <Link href="/Faq"><button>Read all answers</button></Link> 
+           <Link href="/Faq"><button>{lang === "EN" ? FaqsEn.button : FaqsRu.button}</button></Link> 
             <div className={styles.rectan}>
               <Image src="/assets/Rectangle 1172.svg" alt='recta' height={40} width={40} />
             </div>

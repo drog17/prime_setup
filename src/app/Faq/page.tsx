@@ -1,15 +1,14 @@
 import Contacts from "../(home)/sections/Contacts/Contacts";
-import Poisk from "./sections/Poisk/Poisk";
 import Header from "@/widget/header/Header";
 import Footer from "@/widget/footer/Footer";
-import Herod from "./Herod/Herod";
+import Hero from "./Hero/Hero";
+import Search from "./sections/Search/Search";
 export default function Faq() {
     return (
         <>
-
 <Header/>
-<Herod/>
-<Poisk/>
+<Hero/>
+<Search/>
 <Contacts/>
 <Footer/>
         </>
