@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./Search.module.scss";
-import PoiskEn from "@/shared/Constants/lang/en/HomeEn/PoiskEn";
-import PoiskRu from "@/shared/Constants/lang/ru/HomeRu/PoiskRu";
+import PoiskEn from "@/shared/Constants/lang/en/FaqEn/PoiskEn";
+import PoiskRu from "@/shared/Constants/lang/ru/FaqRu/PoiskRu";
 import useLangStore from "@/store/useLangStore";
 import Business from "../Business/Business";
 

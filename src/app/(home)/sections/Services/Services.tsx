@@ -2,8 +2,8 @@
 import Image from 'next/image'
 import styles from './Services.module.scss'
 import useLangStore from '@/store/useLangStore'
-import UsligiEn from '@/shared/Constants/lang/en/HomeEn/UslugiEn'
-import UsligiRu from '@/shared/Constants/lang/ru/HomeRu/UslugiRu'
+import UsligiEn from '@/shared/Constants/lang/en/AboutEn/UslugiEn'
+import UsligiRu from '@/shared/Constants/lang/ru/AboutRu/UslugiRu'
 import Container from '@/shared/ui/Container'
 
 export default function Services() {

@@ -1,8 +1,8 @@
 "use client"
 import Image from 'next/image'
 import styles from './Mission.module.scss'
-import MissiyaEn from '@/shared/Constants/lang/en/HomeEn/MissiyaEn'
-import MissiyaRu from '@/shared/Constants/lang/ru/HomeRu/MissiyaRu'
+import MissiyaEn from '@/shared/Constants/lang/en/AboutEn/MissiyaEn'
+import MissiyaRu from '@/shared/Constants/lang/ru/AboutRu/MissiyaRu'
 import useLangStore from '@/store/useLangStore'
 export default function Mission() {
      const {lang}=useLangStore()
