@@ -54,7 +54,6 @@ export default function AuthModal({ onClose }: AuthModalProps) {
          <div className={styles.btn}>
           <button className={styles.closeBtn} onClick={onClose}>✕</button>
         </div>
-        <img src={"/assets/Frame 3 (2).svg"}  alt='' className={styles.frame32svg} />
         <h2 className={styles.h2}>Authorization</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <p className={styles.eText}>E-mail*</p>
