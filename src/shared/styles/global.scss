@@ -1,3 +1,5 @@
+@import url(./fonts.css);
+
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Gilroy-Bold", sans-serif;
@@ -20,4 +22,5 @@
 body{
     background: #EEEEEE;
     max-width: 100%;
+  font-family: var(--font-family);
 }

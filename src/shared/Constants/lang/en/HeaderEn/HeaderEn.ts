@@ -1,8 +1,8 @@
 const HeaderEn = {
     home: "Home",
-    about: "About",
+    about: "About Us",
     contacts: "Contacts",
-    cervices: "Services",
+    services: "Services",
     faq:"FAQ",
     blog:"Blog",
     buttonleave:'Leave a request'

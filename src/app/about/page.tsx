@@ -1,19 +1,19 @@
-import Missiya from "./Onas/sections/Missiya/Missiya";
-import Predprimial from "./Onas/sections/Predprinial/Predprimial";
-import Prime from "./Onas/sections/Prime/Prime";
-import Commanda from "./Onas/sections/Comanda/Comanda";
 import Header from "@/widget/header/Header";
 import Footer from "@/widget/footer/Footer";
-import Heros from "./Onas/Heros/Heros";
+import Prime from "./sections/Prime/Prime";
+import Predprimial from "./sections/Predprinial/Predprimial";
+import Team from "./sections/Team/Team";
+import Mission from "./sections/Mission/Mission";
+import Hero from "./Hero/Hero";
 export default function About() {
     return (
         <>
             <Header />
-            <Heros/>
+            <Hero/>
             <Prime />
-            <Missiya />
+            <Mission />
             <Predprimial />
-            <Commanda />
+            <Team />
             <Footer/>
         </>
     )

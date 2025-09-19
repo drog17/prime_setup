@@ -1,0 +1,64 @@
+.products {
+    padding-top: 100px;
+    .content {
+        text-align: center;
+        .cards {
+            display: flex;
+            width: 1400px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+.cardWrapper {
+  position: relative;
+}
+
+.redactBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.2s;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+}
+.miniMenu {
+  position: absolute;
+  margin-top: -530px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 10;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 8px;
+    text-align: left;
+    border-radius: 4px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+}

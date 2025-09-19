@@ -1,5 +1,5 @@
-const ContactsEn={
-title: "Start your journey to the UAE today",
+const ContactsEn = {
+  title: "Start your journey to the UAE today",
   text: "We are here to answer your questions and help with starting a business in the UAE.",
   workingHours: "Working hours",
   schedule: {

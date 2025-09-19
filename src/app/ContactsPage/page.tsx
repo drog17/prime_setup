@@ -14,7 +14,7 @@ const ContactRu={
 }
 
 export default function Contact () {
-const {lang,set}=useLangStore()
+const {lang}=useLangStore()
     return(
         <>
            <div className={styles.logo}></div>

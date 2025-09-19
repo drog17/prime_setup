@@ -2,14 +2,6 @@
 import { useState } from "react";
 import styles from './contacts.module.scss'
 import Container from "@/shared/ui/Container";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
-<<<<<<< HEAD
-import useLangStore from "@/store/useLangStore";
-import ContactEn from "@/shared/Constants/lang/en/HomeEn/ContactEn";
-import ContactRu from "@/shared/Constants/lang/ru/HomeRu/ContactRu";
-=======
-import useLangStore from "@/shared/Constants/useLangStore";
->>>>>>> e24245d3c52d90ba9f3afba4cdbcbd78adc3b935
 import Image from 'next/image';
 import facebook from '../../../../../public/assets/Facebook-Icon (1).svg'
 import twitter from '../../../../../public/assets/Twitter-Icon (1).svg'
@@ -18,6 +10,7 @@ import  linkedin from '../../../../../public/assets/LinkedIn-Icon (1).svg'
 import youtube from '../../../../../public/assets/Youtube-Icon (1).svg'
 import ContactsEn from "@/shared/Constants/lang/en/HomeEn/ContactsEn";
 import ContactsRu from "@/shared/Constants/lang/ru/HomeRu/ContactsRu";
+import useLangStore from "@/store/useLangStore";
 
 export default function Contacts() {
     const [formData, setFormData] = useState({
@@ -38,28 +31,15 @@ export default function Contacts() {
         alert(lang === "EN" ? "Message sent!" : "Сообщение отправлено!");
         setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
     };
-<<<<<<< HEAD
     const {lang}=useLangStore()
-
-    return (
-=======
-    const {lang,set}=useLangStore()
     const t = lang === "EN" ? ContactsEn : ContactsRu;
         return (
->>>>>>> e24245d3c52d90ba9f3afba4cdbcbd78adc3b935
         <section className={styles.contacts}>
             <Container>
                 <div className={styles.content}>
                     <div className={styles.left}>
-<<<<<<< HEAD
-                        <h2 className={styles.title}>{lang==="EN" ? ContactEn.title : ContactRu.title}</h2>
-                        <p className={styles.text}>
-                            {lang==="EN" ? ContactEn.text : ContactRu.text}
-                        </p>
-=======
                         <h2 className={styles.title}>{t.title}</h2>
                         <p className={styles.text}>{t.text}</p>
->>>>>>> e24245d3c52d90ba9f3afba4cdbcbd78adc3b935
 
                         <h3 className={styles.subtitle}>{t.workingHours}</h3>
                         <p>{t.schedule.weekdays}</p>

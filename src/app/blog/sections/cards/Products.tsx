@@ -18,7 +18,7 @@ export default function SearchSection() {
             article.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
             article.category.toLowerCase().includes(searchQuery.toLowerCase())
         );
-    }, [searchQuery, articles]);
+    }, [searchQuery]);
 
     return (
         <section className={styles.products}>

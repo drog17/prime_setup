@@ -1,0 +1,43 @@
+.section{
+    margin-top: 140px;
+    width: 100%;
+    .contend{
+        padding-left: 50px;
+        padding-right: 50px;
+        .text{
+            h2{
+                display: flex;
+                justify-content: center;
+                font-family: Gilroy-Bold;
+font-weight: 400;
+font-size: 46px;
+line-height: 50px;
+text-align: center;
+color: #0A2463;
+            }
+            p{
+                width: 1340px;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                font-family: Gilroy-Medium;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+color: black;
+            }
+        }
+        .box{
+            margin-top: 70px;
+            display: flex;
+            column-gap: 40px;
+        }
+        .box2{
+            margin-top: 40px;
+            column-gap: 40px;
+            display: flex;
+        }
+    }
+}
