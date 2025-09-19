@@ -1,11 +1,7 @@
 "use client"
 import { useState } from 'react';
 import styles from './Authoriz.module.scss'
-// import frame32svg from '/assets/Frame 3 (2).svg';
-// import eyeClosed from '/assets/Component 102.svg'
-// import eyeOpen from '/assets/18372143.png'
 import { AuthModalProps} from '@/types/Auth/Auth';
-import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { authSchema } from './validation';
