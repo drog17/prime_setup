@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     z-index: 2;
+
     .content {
         display: flex;
         padding: 31px 48px;
@@ -11,6 +12,7 @@
         justify-content: center;
         gap: 79px;
     }
+
     .catalogs {
         display: flex;
         list-style: none;
@@ -18,67 +20,80 @@
         gap: 20px;
         width: 1070px;
         height: 49px;
-        ul{
+
+        ul {
             display: flex;
         }
+
         .nodirection {
             margin-top: 17px;
             text-decoration: none;
             color: white;
         }
-        .nodirection:hover{
+
+        .nodirection:hover {
             color: #8e8d8d;
         }
 
-        .li{
+        .li {
             font-size: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 105px;
         }
-.li:hover{
-    color: #134397;
-}
+
+        .li:hover {
+            color: grey;
+        }
+
         .languages {
             display: flex;
             align-items: center;
             margin-left: 170px;
             cursor: pointer;
-            img{
+
+            img {
                 margin-left: 5px
             }
         }
-.langWrapper{
-    margin-top: 15px;
-    position: relative;
-.langMenu{
-    position: absolute;
-margin-left: 165px;
-    margin-top: 6px;
-    text-align: center;
-    background: white;
-    color: black;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 10;
-    .ru{
-    padding: 8px 12px;
-    cursor: pointer;
-    }
-    .ru:hover{
-        color: #25A5E4;
-    }
-    .en{
-    padding: 8px 12px;
-    cursor: pointer;
-    }
-.en:hover{
-    color: #D23216;
-}
-}
-}
+
+        .langWrapper {
+            margin-top: 15px;
+            position: relative;
+
+            .langMenu {
+                position: absolute;
+                margin-left: 165px;
+                margin-top: 6px;
+                text-align: center;
+                background: white;
+                color: black;
+                border-radius: 6px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                z-index: 10;
+
+                .ru {
+                    padding: 8px 12px;
+                    cursor: pointer;
+                }
+
+                .ru:hover {
+                    color: #25A5E4;
+                }
+
+                .en {
+                    padding: 8px 12px;
+                    cursor: pointer;
+                }
+
+                .en:hover {
+                    color: #D23216;
+                }
+            }
+        }
+
         .buttonLeav {
             border-radius: 10px;
             width: 182px;
@@ -89,6 +104,7 @@ margin-left: 165px;
             font-weight: 700;
             font-size: 20px;
             color: #134397;
+            cursor: pointer;
         }
 
         .buttonLeav:hover {
