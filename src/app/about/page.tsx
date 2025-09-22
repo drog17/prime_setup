@@ -13,7 +13,7 @@ export default function About() {
             <Prime />
             <Mission />
             <Predprimial />
-            <Team/>
+            <Team />
             <Footer/>
         </>
     )

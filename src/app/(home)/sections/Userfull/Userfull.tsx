@@ -3,8 +3,7 @@ import Image from 'next/image'
 import styles from './Userfull.module.scss'
 import Link from 'next/link'
 import useLangStore from '@/store/useLangStore'
-
-
+import arrow from '../../../../../public/icons/Icon (1).svg'
 
 const UseEn={
     title:"Useful articles and tips",
@@ -44,7 +43,7 @@ export default function Userfull() {
                             </div>
                             <div className={styles.read}>
                                 <Link href="/blog"><span>{lang==="EN" ? UseEn.read : UseRu.read}</span>
-                                    <Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9} />
+                                    <Image src={arrow} alt='icon' width={15} height={9} />
                                 </Link>
                             </div>
                         </div>
@@ -57,7 +56,7 @@ export default function Userfull() {
                             </div>
                             <div className={styles.read}>
                                 <Link href="/blog"><span>{lang==="EN" ? UseEn.read : UseRu.read}</span>
-                                    <Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9} />
+                                    <Image src={arrow} alt='icon' width={15} height={9} />
                                 </Link>
                             </div>
                         </div>
@@ -70,7 +69,7 @@ export default function Userfull() {
                             </div>
                             <div className={styles.read}>
                                 <Link href="/blog"><span>{lang==="EN" ? UseEn.read : UseRu.read}</span>
-                                    <Image src={"/assets/icon (1).svg"} alt='icon' width={15} height={9} />
+                                    <Image src={arrow} alt='icon' width={15} height={9} />
                                 </Link>
                             </div>
                         </div>

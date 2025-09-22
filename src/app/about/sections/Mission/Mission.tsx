@@ -4,6 +4,7 @@ import styles from './Mission.module.scss'
 import MissiyaEn from '@/shared/Constants/lang/en/AboutEn/MissiyaEn'
 import MissiyaRu from '@/shared/Constants/lang/ru/AboutRu/MissiyaRu'
 import useLangStore from '@/store/useLangStore'
+import Airbush from '../../../../../public/assets/Airbrush-Image-Enhancer (4).svg'
 export default function Mission() {
      const {lang}=useLangStore()
     return(
@@ -20,7 +21,7 @@ export default function Mission() {
                 <h3>{lang==="EN" ? MissiyaEn.nash : MissiyaRu.nash}</h3>
                 <p>{lang==="EN" ? MissiyaEn.speed : MissiyaRu.speed}</p>
             </div>
-            <Image src={"/assets/Airbrush-image-Enhancer (4).svg"} alt='Airbrush' width={636} height={636} />
+            <Image src={Airbush} alt='Airbrush' width={636} height={636} />
         </div>
     </div>
 </div>
