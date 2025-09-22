@@ -7,6 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { authSchema } from './validation';
 import { loginUser } from './AuthService';
 import toast from 'react-hot-toast';
+import Image from 'next/image';
 
 type AuthFormData = {
   email: string;
@@ -74,7 +75,7 @@ export default function AuthModal({ onClose }: AuthModalProps) {
           {errors.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
            </label>
          <span className={styles.eye} onClick={() => setShowPassword(prev => !prev)}>
-           <img src={showPassword ? '/assets/18372143.png' : "/assets/Component 102.svg"}  alt='Toggle visibility'      
+           <Image src={showPassword ? '/assets/18372143.png' : "/assets/Component 102.svg"}  alt='Toggle visibility' width={20} height={20}  
              className={styles.co}
              />
          </span>
